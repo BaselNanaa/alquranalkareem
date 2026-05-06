@@ -1,0 +1,1421 @@
+{
+  "appName": "Al-Qur'an Al-Karim - Perpustakaan Hikmah",
+  "@appName": {
+    "description": "appName",
+    "type": "text",
+    "placeholders": {}
+  },
+  "search_hint": "Cari di dalam Ayat-ayat Al-Qur'an",
+  "@search_hint": {
+    "description": "search_hint",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menu": "Menu",
+  "@menu": {
+    "description": "menu",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notes": "Catatan",
+  "@notes": {
+    "description": "notes",
+    "type": "text",
+    "placeholders": {}
+  },
+  "note_title": "Judul",
+  "@note_title": {
+    "description": "note_title",
+    "type": "text",
+    "placeholders": {}
+  },
+  "add_new_note": "Tambahkan Catatan Baru",
+  "@add_new_note": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "note_details": "Detail Catatan",
+  "@note_details": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmarks": "Penanda yang Tersimpan",
+  "@bookmarks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmark_title": "Nama Penanda",
+  "@bookmark_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "add_new_bookmark": "Tambahkan Penanda Baru",
+  "@add_new_bookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "save": "Simpan",
+  "@save": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "edit": "Edit",
+  "@edit": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "azkar": "Dzikir",
+  "@azkar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "qibla": "Arah Kiblat",
+  "@qibla": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "salat": "Waktu Shalat",
+  "@salat": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aya_count": "Jumlah Ayat",
+  "@aya_count": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quran_sorah": "Surah",
+  "@quran_sorah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_us": "Tentang Aplikasi",
+  "@about_us": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "stop_title": "Waqaf Al-Qur'an - Perpustakaan Hikmah",
+  "@stop_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_app": "Aplikasi \"Al-Qur'an Al-Karim - Perpustakaan Hikmah\" adalah aplikasi lengkap yang menawarkan berbagai fitur untuk meningkatkan pengalaman membaca dan mempelajari Al-Qur'an. Beberapa fitur tersebut adalah:",
+  "@about_app": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_app2": "Fitur utama aplikasi ini adalah:",
+  "@about_app2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_app3": "۞ Antarmuka modern dan mudah digunakan: Desain yang modern dan intuitif memudahkan navigasi dan akses ke semua fitur, dengan tampilan kalender baru serta kemampuan menelusuri kalender tahunan secara lengkap.\n۞ Mengadopsi cetakan Kompleks Raja Fahd: Aplikasi ini menggunakan cetakan Kompleks Raja Fahd untuk Mushaf, yang dikenal akurat dan tepercaya.\n۞ Membaca interaktif dan menyeluruh: Pengalaman membaca yang fleksibel, baik mode mushaf (halaman) maupun mode satu ayat, dengan interaksi penuh dengan teks.\n۞ Mendengarkan tingkat lanjut: Mendengarkan ayat dan surah dari para qari pilihan, dengan fitur menampilkan ayat yang sedang diputar, serta kemampuan mendengarkan tiap kata secara terpisah untuk meningkatkan pembelajaran.\n۞ Pencarian dan navigasi cepat: Pencarian instan di ayat-ayat Al-Qur'an dengan kemampuan langsung menuju surah atau halaman yang diinginkan, dan navigasi mulus antar surah.\n۞ Tafsir dan perpustakaan Islam: Akses berbagai tafsir dan terjemahan, serta perpustakaan Islam terintegrasi yang mencakup kitab hadits dan tafsir.\n۞ Tajwid dan kaidahnya: Dukungan tampilan tajwid dan kaidahnya dengan jelas, serta penambahan Qira'at 'Asyr (sepuluh qira'at) untuk memperluas pemahaman cara membaca.\n۞ Analisis bahasa tingkat lanjut: Menampilkan tashrif dan i'rab untuk setiap kata sehingga membantu pemahaman makna bahasa dalam Al-Qur'an.\n۞ Ayat-ayat serupa: Fitur khusus untuk menampilkan ayat-ayat yang serupa agar memudahkan hafalan dan murajaah.\n۞ Manajemen membaca dan hafalan: Menambahkan penanda (bookmark) untuk ayat dan halaman agar mudah kembali kapan saja.\n۞ Membaca tanda waqf: Menjelaskan tanda-tanda waqf untuk membantu membaca dengan benar.\n۞ Dzikir Hisnul Muslim: Bagian lengkap untuk membaca dzikir dengan fitur favorit dan navigasi cepat antar bagian.\n۞ Kustomisasi tampilan: Mendukung perubahan tema warna, termasuk mode gelap, untuk pengalaman membaca yang nyaman.\n۞ Unduh dan penggunaan offline: Mengunduh surah dan mendengarkannya nanti tanpa koneksi internet.\n\nFitur-fitur ini menjadikan aplikasi \"Al-Qur'an Al-Karim - Perpustakaan Hikmah\" sebagai platform terpadu yang menggabungkan membaca, mendengarkan, tafsir, dan pembelajaran, sehingga menghadirkan pengalaman spiritual dan edukatif yang kaya serta mudah digunakan.",
+  "@about_app3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "email": "Hubungi Kami",
+  "@email": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "select_player": "Pilih Qari",
+  "@select_player": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "delete": "Hapus",
+  "@delete": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "page": "Halaman",
+  "@page": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search_word": "Cari Ayat",
+  "@search_word": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search_description": "Anda dapat mencari semua ayat Al-Qur'an dengan mengetikkan kata dari ayat tersebut.",
+  "@search_description": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fontSize": "Ubah Ukuran Font",
+  "@fontSize": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "waqfName": "Tanda Waqf",
+  "@waqfName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tajweedRules": "Hukum Tajwid",
+  "@tajweedRules": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardTitle1": "Antarmuka Mudah",
+  "@onboardTitle1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardDesc1": "- Mudah mencari ayat.\n- Ubah bahasa.\n- Dengarkan halaman.\n- Ganti Qari.",
+  "@onboardDesc1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardTitle2": "Tampilkan Tafsir",
+  "@onboardTitle2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardDesc2": "Anda dapat membaca tafsir setiap ayat dengan menarik menu ke atas.",
+  "@onboardDesc2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardTitle3": "Opsi Klik",
+  "@onboardTitle3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardDesc3": "1- Ketika mengklik dua kali, halaman akan diperbesar.\n2- Ketika menahan klik lama, opsi untuk menyimpan halaman akan muncul.\n3- Ketika mengklik sekali, menu akan muncul.",
+  "@onboardDesc3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "green": "Tampilan Hijau",
+  "@green": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "brown": "Tampilan Coklat",
+  "@brown": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dark": "Tampilan Gelap",
+  "@dark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "azkarfav": "Dzikir Favorit",
+  "@azkarfav": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "themeTitle": "Pilih Tampilan",
+  "@themeTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sorah": "Surah",
+  "@sorah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "part": "Juz",
+  "@part": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "langChange": "Ubah Bahasa",
+  "@langChange": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafChange": "Pilih Tafsir",
+  "@tafChange": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafIbnkatheerN": "Tafsir Ibnu Katsir",
+  "@tafIbnkatheerN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafBaghawyN": "Tafsir Al-Baghawy",
+  "@tafBaghawyN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafQurtubiN": "Tafsir Al-Qurtubi",
+  "@tafQurtubiN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafSaadiN": "Tafsir As-Sa'di",
+  "@tafSaadiN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafTabariN": "Tafsir At-Tabari",
+  "@tafTabariN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafIbnkatheerD": "Tafsir Al-Qur'an Al-'Azhim",
+  "@tafIbnkatheerD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafBaghawyD": "Ma'alim At-Tanzil",
+  "@tafBaghawyD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafQurtubiD": "Al-Jami' li Ahkam Al-Qur'an",
+  "@tafQurtubiD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafSaadiD": "Tafsir Karim Ar-Rahman fi Tafsir Kalam Al-Mannan",
+  "@tafSaadiD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafTabariD": "Jami' Al-Bayan fi Tafsir Al-Qur'an",
+  "@tafTabariD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appLang": "Bahasa Aplikasi",
+  "@appLang": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "setting": "Pengaturan",
+  "@setting": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader1": "Abdul Basit",
+  "@reader1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader2": "Muhammad Al-Menshawy",
+  "@reader2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader3": "Mahmoud Al-Hosary",
+  "@reader3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader4": "Ahmed Al-Ajmi",
+  "@reader4": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader5": "Maher Al-Muaiqly",
+  "@reader5": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader6": "Saud Al-Shuraim",
+  "@reader6": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader7": "Saad Al-Ghamdi",
+  "@reader7": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader8": "Mustafa Al-Azzawi",
+  "@reader8": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader9": "Nasser Al-Qatami",
+  "@reader9": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader10": "Qader Al-Kurdi",
+  "@reader10": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader11": "Sherzade Taher",
+  "@reader11": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader12": "Abdulrahman Al-Awsi",
+  "@reader12": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader13": "Wadih Al-Yamani",
+  "@reader13": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader14": "Yasser Al-Dosari",
+  "@reader14": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader15": "Abdullah Al-Juhani",
+  "@reader15": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader16": "Fares Abbad",
+  "@reader16": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader17": "Mohammad Ayoub",
+  "@reader17": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader18": "Maher Al-Muaiqly - Mujawwad",
+  "@reader18": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader19": "Ahmad Al-Nufais - Mujawwad",
+  "@reader19": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader20": "Yasser Al-Dosari - Mujawwad",
+  "@reader20": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader21": "Ali Jaber",
+  "@reader21": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "alheekmahlib": "Perpustakaan Hikmah",
+  "@alheekmahlib": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backTo": "Kembali ke",
+  "@backTo": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "next": "Selanjutnya",
+  "@next": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "start": "Mulai",
+  "@start": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quranPages": "Al-Qur'an (Halaman)",
+  "@quranPages": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quranText": "Al-Qur'an (Ayat)",
+  "@quranText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafsir": "Tafsir",
+  "@tafsir": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "allJuz": "Semua Juz",
+  "@allJuz": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copyAzkarText": "Dzikir disalin",
+  "@copyAzkarText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addBookmark": "Penanda telah ditambahkan",
+  "@addBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deletedBookmark": "Penanda telah dihapus!",
+  "@deletedBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deletedReminder": "Pengingat telah dihapus!",
+  "@deletedReminder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fillAllFields": "Harap isi semua kolom!",
+  "@fillAllFields": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "version": "Versi",
+  "@version": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "share": "Bagikan Aplikasi",
+  "@share": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "facebook": "Ikuti kami di Facebook",
+  "@facebook": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addZekrBookmark": "Dzikir telah ditambahkan ke favorit",
+  "@addZekrBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deletedZekrBookmark": "Dzikir telah dihapus dari favorit!",
+  "@deletedZekrBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pageNo": "Nomor Halaman",
+  "@pageNo": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastRead": "Bacaan Terakhir",
+  "@lastRead": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copyAyah": "Ayat telah disalin",
+  "@copyAyah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copyTafseer": "Tafsir telah disalin",
+  "@copyTafseer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "online": "Daring",
+  "@online": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "download": "Unduh",
+  "@download": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noInternet": "Perangkat tidak terhubung ke internet!",
+  "@noInternet": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mobileDataAyat": "Pemberitahuan: Anda menggunakan data seluler untuk mengunduh ayat!",
+  "@mobileDataAyat": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mobileDataSurahs": "Pemberitahuan: Anda menggunakan data seluler untuk mengunduh surah!",
+  "@mobileDataSurahs": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mobileDataListen": "Pemberitahuan: Anda menggunakan data seluler untuk mendengarkan surah!",
+  "@mobileDataListen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "choiceAyah": "Harap pilih ayat terlebih dahulu!",
+  "@choiceAyah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "stopSigns": "Tanda Waqf",
+  "@stopSigns": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutApp": "Tentang Aplikasi",
+  "@aboutApp": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "readMore": "Baca Selengkapnya",
+  "@readMore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "readLess": "Baca Lebih Sedikit",
+  "@readLess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ok": "Oke",
+  "@ok": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel": "Batal",
+  "@cancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchToSurah": "Cari Surah",
+  "@searchToSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addReminder": "Tambahkan Pengingat",
+  "@addReminder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastListen": "Pendengaran Terakhir",
+  "@lastListen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hizb": "Hizb",
+  "@hizb": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareText": "Sebagai Teks",
+  "@shareText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareImage": "Sebagai Gambar",
+  "@shareImage": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareAudio": "Sebagai Audio",
+  "@shareAudio": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareImageWTrans": "Sebagai Gambar dengan Konten Tambahan",
+  "@shareImageWTrans": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareTrans": "Pemberitahuan: Berbagi tafsir dalam bentuk gambar hanya mendukung Tafsir As-Sa'di karena tafsirnya tidak panjang.",
+  "@shareTrans": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "translation": "Terjemahan",
+  "@translation": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search": "Cari",
+  "@search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "surahsList": "Daftar Surah",
+  "@surahsList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmarksList": "Daftar Penanda",
+  "@bookmarksList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copy": "Salin",
+  "@copy": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareTafseer": "Bagikan",
+  "@shareTafseer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addToBookmark": "Tambahkan ke Penanda",
+  "@addToBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "repeatSurah": "Ulangi Surah",
+  "@repeatSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pauseSurah": "Jeda Surah",
+  "@pauseSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "replaySurah": "Putar Ulang Surah",
+  "@replaySurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "skipToPrevious": "Surah Sebelumnya",
+  "@skipToPrevious": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deletedPlayList": "Daftar putar telah dihapus",
+  "@deletedPlayList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createPlayList": "Buat Daftar Putar",
+  "@createPlayList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "playList": "Daftar Putar",
+  "@playList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "playListName": "Tulis Nama Daftar Putar",
+  "@playListName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "from": "Dari",
+  "@from": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "to": "Ke",
+  "@to": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "surah": "Surah",
+  "@surah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "chooseSurah": "Pilih Surah",
+  "@chooseSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "segments": "Segmen",
+  "@segments": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addSegment": "Tambah Segmen",
+  "@addSegment": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "repeatCount": "Jumlah Pengulangan",
+  "@repeatCount": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sleepTimer": "Timer Tidur",
+  "@sleepTimer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hour": "Jam",
+  "@hour": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "minutes": "Menit",
+  "@minutes": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "of": "dari",
+  "@of": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quran": "Al-Qur'an",
+  "@quran": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quranAudio": "Mushaf audio",
+  "@quranAudio": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "startScreen": "Layar Awal",
+  "@startScreen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectScreen": "Pilih Layar Awal",
+  "@selectScreen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyZeker": "Doa Hari Ini",
+  "@dailyZeker": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lang": "Bahasa Arab",
+  "@lang": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "juz": "Juz",
+  "@juz": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sajda": "Sujud",
+  "@sajda": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pages": "Halaman",
+  "@pages": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ayahs": "Ayat",
+  "@ayahs": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "eidGreetingContent": "Semoga Allah menerima puasa, shalat, dan amal saleh kita.",
+  "@eidGreetingContent": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "eidGreetingContent2": "Semoga setiap tahun Anda semakin dekat kepada Allah.",
+  "@eidGreetingContent2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "eidGreetingTitle": "Eid Mubarak",
+  "@eidGreetingTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ramadhanMubarak": "Ramadhan Mubarak",
+  "@ramadhanMubarak": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "home": "Beranda",
+  "@home": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "skip": "Lewati",
+  "@skip": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "What's New": "Apa yang Baru",
+  "@What's New": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ourApps": "Aplikasi Kami",
+  "@ourApps": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "choseQuran": "Pilih Metode Membaca",
+  "@choseQuran": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "blueMode": "Biru",
+  "@blueMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "brownMode": "Coklat",
+  "@brownMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "oldMode": "Klasik",
+  "@oldMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "darkMode": "Gelap",
+  "@darkMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sunday": "Minggu",
+  "@Sunday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Monday": "Senin",
+  "@Monday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Tuesday": "Selasa",
+  "@Tuesday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Wednesday": "Rabu",
+  "@Wednesday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Thursday": "Kamis",
+  "@Thursday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Friday": "Jumat",
+  "@Friday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Saturday": "Sabtu",
+  "@Saturday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "RemainsUntilTheEndOf": "Tersisa hingga akhir",
+  "@RemainsUntilTheEndOf": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Muharram": "Muharram",
+  "@Muharram": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Safar": "Safar",
+  "@Safar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Rabi' Al-Awwal": "Rabi' Al-Awwal",
+  "@Rabi' Al-Awwal": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Rabi' Al-Thani": "Rabi' Al-Thani",
+  "@Rabi' Al-Thani": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Jumada Al-Awwal": "Jumada Al-Awwal",
+  "@Jumada Al-Awwal": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Jumada Al-Thani": "Jumada Al-Thani",
+  "@Jumada Al-Thani": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Rajab": "Rajab",
+  "@Rajab": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sha'aban": "Sya'ban",
+  "@Sha'aban": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Ramadan": "Ramadhan",
+  "@Ramadan": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Shawwal": "Syawal",
+  "@Shawwal": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Dhu Al-Qi'dah": "Dzulqa'dah",
+  "@Dhu Al-Qi'dah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Dhu Al-Hijjah": "Dzulhijjah",
+  "@Dhu Al-Hijjah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Day": "Hari",
+  "@Day": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Days": "Hari-hari",
+  "@Days": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hijriNote": "Catatan: Harap diingat bahwa mungkin terjadi sedikit perbedaan dalam waktu yang ditentukan karena kalender Hijriyah didasarkan pada pengamatan langsung bulan sabit. Kami berusaha semaksimal mungkin untuk memastikan akurasi tanggal yang diumumkan, dengan mempertimbangkan bahwa kalender akan diperbaiki jika bulan sabit terlihat.",
+  "@hijriNote": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "AH": "Hijriyah",
+  "@AH": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Fajr": "Fajar",
+  "@Fajr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Dhuhr": "Dzuhur",
+  "@Dhuhr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Asr": "Ashar",
+  "@Asr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Maghrib": "Maghrib",
+  "@Maghrib": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Isha": "Isya",
+  "@Isha": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Last Third": "Sepertiga Terakhir",
+  "@Last Third": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Middle of the Night": "Tengah Malam",
+  "@Middle of the Night": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sunrise": "Matahari Terbit",
+  "@Sunrise": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafsirLibrary": "Perpustakaan Tafsir",
+  "@tafsirLibrary": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "allBooks": "Semua Buku",
+  "@allBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "myLibrary": "Perpustakaan Saya",
+  "@myLibrary": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmark": "Penanda",
+  "@bookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "chapterBook": "Bab Buku",
+  "@chapterBook": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutBook": "Tentang Buku",
+  "@aboutBook": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "khatmah": "Khatmah",
+  "@khatmah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createKhatmah": "Buat Khatmah",
+  "@createKhatmah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "khatmahName": "Nama Khatmah",
+  "@khatmahName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addKhatmah": "Tambahkan Khatmah",
+  "@addKhatmah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "duration": "Durasi",
+  "@duration": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "divisionBySahabah": "Pembagian oleh Sahabat",
+  "@divisionBySahabah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "choiceColor": "Pilih Warna",
+  "@choiceColor": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchInBooks": "Cari di Buku",
+  "@searchInBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hasPassed": "Telah Lewat",
+  "@hasPassed": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloading": "Sedang mengunduh...",
+  "@downloading": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "startHijriYear": "Awal Tahun Hijriyah",
+  "@startHijriYear": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderToFastTasoo'a": "Pengingat Puasa Tasoo'a",
+  "@reminderToFastTasoo'a": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderToFastAshura": "Pengingat Puasa Asyura",
+  "@reminderToFastAshura": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ramadhan": "Bulan Ramadhan",
+  "@ramadhan": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "nightOfQadir": "Pengingat Malam Lailatul Qadr",
+  "@nightOfQadir": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "EidAl-Fitr": "Idul Fitri",
+  "@EidAl-Fitr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sexShawwal": "Pengingat Puasa Enam Hari Syawal",
+  "@sexShawwal": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "arafahReminder": "Pengingat Puasa Hari Arafah",
+  "@arafahReminder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tenDaysOfDhul-Hijjah": "Sepuluh Hari Dzulhijjah",
+  "@tenDaysOfDhul-Hijjah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "EidAl-Adha": "Idul Adha",
+  "@EidAl-Adha": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "choiceBackgroundColor": "Pilih Warna Latar Belakang",
+  "@choiceBackgroundColor": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reset": "Atur Ulang",
+  "@reset": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Medinan": "Madaniyah",
+  "@Medinan": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Meccan": "Makkiyah",
+  "@Meccan": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "surahNames": "Nama-nama Surah",
+  "@surahNames": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutSurah": "Tentang Surah",
+  "@aboutSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notification": "Notifikasi",
+  "@notification": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noNotifications": "Tidak Ada Notifikasi",
+  "@noNotifications": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminders": "Pengingat",
+  "@reminders": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "customReminder": "Pengingat Khusus",
+  "@customReminder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addMore": "Tambah Lagi",
+  "@addMore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "What'sNewDetails10": "۞ Menambahkan fitur gulir otomatis pada halaman Al-Qur'an, sehingga Anda dapat membaca dengan nyaman tanpa harus berpindah halaman secara manual.\n۞ Menambahkan qari Ali Jaber.",
+  "@What'sNewDetails10": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "chooseDhekr": "Pilih Dzikir",
+  "@chooseDhekr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectTime": "Pilih waktu pengingat",
+  "@selectTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadBookFirst": "Harap unduh buku terlebih dahulu.",
+  "@downloadBookFirst": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastDayOf": "Hari terakhir bulan",
+  "@lastDayOf": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "booksDownloaded": "Buku telah diunduh.",
+  "@booksDownloaded": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "booksDeleted": "Buku telah dihapus.",
+  "@booksDeleted": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noBooksDownloaded": "Anda belum mengunduh buku apa pun.",
+  "@noBooksDownloaded": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notifyQuranBody": "Anda berhenti di halaman @currentPageNumber dalam Al-Qur'an, apakah Anda ingin melanjutkan?",
+  "@notifyQuranBody": {
+    "type": "text",
+    "placeholders": {
+      "currentPageNumber": {}
+    }
+  },
+  "notifyAdhkarBody": "Jangan lupa membaca @adhkarType",
+  "@notifyAdhkarBody": {
+    "type": "text",
+    "placeholders": {
+      "adhkarType": {}
+    }
+  },
+  "notifyBooksBody": "Jangan lupa untuk melanjutkan membaca buku @bookName",
+  "@notifyBooksBody": {
+    "type": "text",
+    "placeholders": {
+      "bookName": {}
+    }
+  },
+  "notifyListenBody": "Jangan lupa untuk melanjutkan mendengarkan surah-surah",
+  "@notifyListenBody": {
+    "type": "text",
+    "placeholders": {
+      "bookName": {}
+    }
+  },
+  "lastSearch": "Pencarian Terakhir",
+  "@lastSearch": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ashura": "Asyura",
+  "@ashura": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "arafah": "Hari Arafah",
+  "@arafah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "editHijriDay": "Ubah Hari Hijriah",
+  "@editHijriDay": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "defaultFontText": "Font default",
+  "@defaultFontText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadedFontsText": "Font Al-Quran",
+  "@downloadedFontsText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fonts": "Font",
+  "@fonts": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fontsNotes": "Untuk pengalaman yang lebih baik dan tampilan Al-Quran yang optimal, silakan unduh font-nya.",
+  "@fontsNotes": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "calenderSettings": "Pengaturan Kalender",
+  "@calenderSettings": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "islamicCalendar": "Kalender Islam",
+  "hijriCalendar": "Kalender Hijriah",
+  "calendar": "Kalender",
+  "events": "Acara",
+  "year": "Tahun",
+  "month": "Bulan",
+  "hijri": "Hijriah",
+  "Sun": "Min",
+  "@Sun": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Mon": "Sen",
+  "@Mon": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Tue": "Sel",
+  "@Tue": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Wed": "Rab",
+  "@Wed": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Thu": "Kam",
+  "@Thu": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Fri": "Jum",
+  "@Fri": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sat": "Sab",
+  "@Sat": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "manager_ayah_downloads": "Kelola Unduhan Ayat",
+  "load_error": "Gagal memuat data untuk kata ini.",
+  "no_data": "Tidak ada data untuk kata ini.",
+  "recitations": "Qiraat",
+  "tasreef": "Konjugasi",
+  "eerab": "I'rab",
+  "unavailableDataTemplate": "Data @kind belum diunduh di perangkat ini",
+  "@unavailableDataTemplate": {
+    "type": "text",
+    "placeholders": {
+      "kind": {}
+    }
+  },
+  "mushafOrthographicMarks": "Harakat Mushaf",
+  "bookRemovedFromLastRead": "Buku dihapus dari Terakhir Dibaca",
+  "hadiths": "Hadis",
+  "sixthBooks": "Enam Kitab",
+  "ninthBooks": "Sembilan Kitab",
+  "noHadithBooks": "Tidak ada buku hadis yang diunduh di perangkat ini.",
+  "noTafsirBooks": "Tidak ada buku tafsir yang diunduh di perangkat ini.",
+  "noBooks": "Tidak ada buku.",
+  "bookJuz": "Bagian Buku",
+  "downloadBookFirstToSeeTheContents": "Silakan unduh buku terlebih dahulu untuk melihat isinya",
+  "chapter": "Bab",
+  "goToStartOfJuz": "Pergi ke awal bagian",
+  "noBooksReadedYet": "Anda belum membaca buku apa pun.",
+  "noBooksFoundForSearch": "Tidak ditemukan buku.",
+  "islamicLibrary": "Perpustakaan Islam",
+  "tajweed": "Dengan tajwid",
+  "useEnglishNumbers": "Gunakan angka Inggris",
+  "changeTafsir": "Ganti tafsir",
+  "mutashabihat": "Ayat serupa",
+  "no_mutashabihat": "Tidak ada frasa serupa untuk ayat ini",
+  "browse_mutashabihat": "Telusuri ayat serupa",
+  "mutashabihat_in": "Ayat serupa di",
+  "repeated": "Pengulangan",
+  "times": "kali",
+  "surahs": "Surah",
+  "ayah": "Ayat",
+  "tajweedUnavailableText": "Data aturan tajwid belum diunduh.",
+  "tajweedSurahNumberErrorText": "Gagal menentukan nomor surah",
+  "tajweedLoadErrorText": "Gagal memuat data aturan tajwid",
+  "tajweedNoDataText": "Tidak ada data tajwid untuk ayat ini.",
+  "twoDays": "Dua hari",
+  "searchInBook": "Cari di buku",
+  "autoScrollSettings": "Pengaturan gulir otomatis",
+  "stopCondition": "Berhenti pada:",
+  "pageCount": "Jumlah halaman:",
+  "speed": "Kecepatan:",
+  "slow": "Lambat",
+  "fast": "Cepat",
+  "nextHizb": "Hizb berikutnya",
+  "nextJuz": "Juz berikutnya",
+  "manual": "Manual"
+}

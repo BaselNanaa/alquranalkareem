@@ -1,0 +1,1427 @@
+{
+  "appName": "Al Quran Al Kareem - Al Heekmah Library",
+  "@appName": {
+    "description": "appName",
+    "type": "text",
+    "placeholders": {}
+  },
+  "search_hint": "Search the verses of the Quran",
+  "@search_hint": {
+    "description": "search_hint",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menu": "Menu",
+  "@menu": {
+    "description": "menu",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notes": "Notes",
+  "@notes": {
+    "description": "notes",
+    "type": "text",
+    "placeholders": {}
+  },
+  "note_title": "Title",
+  "@note_title": {
+    "description": "note_title",
+    "type": "text",
+    "placeholders": {}
+  },
+  "add_new_note": "Add a new note",
+  "@add_new_note": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "note_details": "Note Details",
+  "@note_details": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmarks": "Bookmarks Saved",
+  "@bookmarks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmark_title": "Bookmark Name",
+  "@bookmark_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "add_new_bookmark": "Add a new Bookmark",
+  "@add_new_bookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "save": "Save",
+  "@save": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "edit": "Edit",
+  "@edit": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "azkar": "Athkar",
+  "@azkar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "qibla": "Qibla Direction",
+  "@qibla": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "salat": "Prayer Times",
+  "@salat": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aya_count": "Number of verses",
+  "@aya_count": {
+    "description": "aya_count",
+    "type": "text",
+    "placeholders": {}
+  },
+  "quran_sorah": "Surahs",
+  "@quran_sorah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_us": "About App",
+  "@about_us": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "stop_title": "The noble Qur’an - Al-Heekmah Library",
+  "@stop_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_app": "The \"Holy Quran - Hikma Library\" app is an integrated application that offers a wide range of features to enhance the experience of reading and learning the Holy Quran, including:",
+  "@about_app": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_app2": "Among the most important features of the application :",
+  "@about_app2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_app3": "۞ A modern, easy-to-use interface: A contemporary, intuitive design that makes it easy to navigate and access all features, with a new calendar view and the ability to browse the full yearly calendar.\n۞ Adopting the King Fahd Complex edition: The app relies on the King Fahd Complex Mushaf edition, known for its accuracy and reliability.\n۞ Interactive, comprehensive reading: A flexible reading experience in either Mushaf-page mode or single-ayah mode, with full interaction with the text.\n۞ Advanced listening: Listen to ayahs and surahs with voices of selected reciters, with the feature of showing the current ayahs during playback, plus the ability to listen to each word separately to enhance learning.\n۞ Fast search and navigation: Instant search within Qur'an verses with direct jump to the desired surah or page, and smooth navigation between surahs.\n۞ Tafsir and Islamic library: Access a collection of tafsir and translations, in addition to an integrated Islamic library that includes Hadith and tafsir books.\n۞ Tajweed and its rules: Clear display of tajweed and its rules, with the addition of the Ten Qira'at to broaden understanding of recitation methods.\n۞ Advanced linguistic analysis: Display morphology (tasreef) and i'rab for each word, helping deeper understanding of linguistic meanings in the Qur'an.\n۞ Similar verses: A dedicated feature to display similar verses to make memorization and review easier.\n۞ Reading and memorization management: Add bookmarks for ayahs and pages to return to them anytime.\n۞ Reading stop signs: Clarify waqf signs to help users read correctly.\n۞ Hisn Al-Muslim adhkar: A complete section for reading adhkar with favorites and quick navigation between sections.\n۞ Display customization: Support changing color styles, including dark mode, for a comfortable reading experience.\n۞ Downloading and offline use: Download surahs and listen later without an internet connection.\n\nThese features make the \"Holy Quran - Hikma Library\" app an integrated platform combining reading, listening, tafsir, and learning, offering a rich and easy-to-use spiritual and educational experience.",
+  "@about_app3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "email": "Contact us",
+  "@email": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "select_player": "Reader selected",
+  "@select_player": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "delete": "Delete",
+  "@delete": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "page": "Page",
+  "@page": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search_word": "Search for a Verse",
+  "@search_word": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search_description": "You can search for all verses of the Noble Qur’an, just type a word from the verse.",
+  "@search_description": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fontSize": "Change Font Size",
+  "@fontSize": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "waqfName": "Stop Signs",
+  "@waqfName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tajweedRules": "Tajweed Rules",
+  "@tajweedRules": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardTitle1": "Easy interface",
+  "@onboardTitle1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardDesc1": "- Ease of searching for a verse.\n- Change the language.\n- Listen to the page.\n- Change the reader.",
+  "@onboardDesc1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardTitle2": "Show The Tafseer",
+  "@onboardTitle2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardDesc2": "The interpretation of each verse can be read by pulling the list up.",
+  "@onboardDesc2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardTitle3": "Click Options",
+  "@onboardTitle3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardDesc3": "1- When you double click the page is enlarged.\n2- Upon long click you will be presented with the option to save the page.\n3- When you press once, the menus appear.",
+  "@onboardDesc3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "green": "Green Mode",
+  "@green": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "brown": "Brown Mode",
+  "@brown": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dark": "Dark Mode",
+  "@dark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "azkarfav": "Athkar Favorite",
+  "@azkarfav": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "themeTitle": "Choose Appearance",
+  "@themeTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sorah": "Surah",
+  "@sorah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "part": "Part",
+  "@part": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "langChange": "Change the language",
+  "@langChange": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafChange": "Choose an tafsir",
+  "@tafChange": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafIbnkatheerN": "Tafsir Ibn Kathir",
+  "@tafIbnkatheerN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafBaghawyN": "Tafsir al-Baghawi",
+  "@tafBaghawyN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafQurtubiN": "Tafsir al-Qurtubi",
+  "@tafQurtubiN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafSaadiN": "Tafsir As-Sadi",
+  "@tafSaadiN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafTabariN": "Tafsir al-Tabari",
+  "@tafTabariN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafIbnkatheerD": "Tafsir al-Quran al-Azim",
+  "@tafIbnkatheerD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafBaghawyD": "Maalim al-Tanzil",
+  "@tafBaghawyD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafQurtubiD": "Al-Jami li Ahkam al-Quran",
+  "@tafQurtubiD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafSaadiD": "Taiseer Kalam Almannan",
+  "@tafSaadiD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafTabariD": "Jami al-Bayan an Tawil [ay] al Quran",
+  "@tafTabariD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appLang": "App Language",
+  "@appLang": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "setting": "Setting",
+  "@setting": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader1": "Abdul Basit",
+  "@reader1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader2": "Mohamed El-Minshawi",
+  "@reader2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader3": "Mahmoud Al-Hussary",
+  "@reader3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader4": "Ahmed Al-Ajamy",
+  "@reader4": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader5": "Maher Al Muaiqly",
+  "@reader5": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader6": "Saud Al-Shuraim",
+  "@reader6": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader7": "Saad Al-Ghamdi",
+  "@reader7": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader8": "Mustafa Al-Azzawi",
+  "@reader8": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader9": "Nasser Al-Qatami",
+  "@reader9": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader10": "Qader Al-Kurdi",
+  "@reader10": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader11": "Sherzad Taher",
+  "@reader11": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader12": "Abdulrahman Al-Ousi",
+  "@reader12": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader13": "Wadi Al-Yemeni",
+  "@reader13": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader14": "Yasser Al-Dosari",
+  "@reader14": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader15": "Abdullah Al Juhany",
+  "@reader15": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader16": "Fares Abbad",
+  "@reader16": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader17": "Mohammad Ayoub",
+  "@reader17": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader18": "Maher Al-Muaiqly - Mujawwad",
+  "@reader18": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader19": "Ahmad Al-Nufais - Mujawwad",
+  "@reader19": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader20": "Yasser Al-Dosari - Mujawwad",
+  "@reader20": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader21": "Ali Jaber",
+  "@reader21": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "alheekmahlib": "Alheekmah Library",
+  "@alheekmahlib": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backTo": "Back To",
+  "@backTo": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "next": "Next",
+  "@next": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "start": "Start",
+  "@start": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quranPages": "Al Quran (Pages)",
+  "@quranPages": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quranText": "Al Quran (Ayah)",
+  "@quranText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafsir": "Al tafsir",
+  "@tafsir": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "allJuz": "Parts",
+  "@allJuz": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copyAzkarText": "The Azkar has been copied!",
+  "@copyAzkarText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addBookmark": "Bookmark added!",
+  "@addBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deletedBookmark": "Bookmark deleted!",
+  "@deletedBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deletedReminder": "Reminder deleted!",
+  "@deletedReminder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fillAllFields": "Please fill in the fields!",
+  "@fillAllFields": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "version": "Version",
+  "@version": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "share": "Share The App",
+  "@share": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "facebook": "Follow us on Facebook",
+  "@facebook": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addZekrBookmark": "The Zekr has been added to favourites",
+  "@addZekrBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deletedZekrBookmark": "The Zekr has been removed from favourites!",
+  "@deletedZekrBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pageNo": "Page No",
+  "@pageNo": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastRead": "Last Read",
+  "@lastRead": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copyAyah": "The verse has been copied",
+  "@copyAyah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copyTafseer": "The Tafseer has been copied",
+  "@copyTafseer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "online": "Online",
+  "@online": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "download": "Download",
+  "@download": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noInternet": "The device is not connected to the Internet!",
+  "@noInternet": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mobileDataAyat": "Note: You are using cellular data to download verses!",
+  "@mobileDataAyat": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mobileDataSurahs": "Note: You are using cellular data to download the surahs!",
+  "@mobileDataSurahs": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mobileDataListen": "Note: You are using cellular data to listen to surahs!",
+  "@mobileDataListen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "choiceAyah": "Please choose the verse first!",
+  "@choiceAyah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "stopSigns": "Stop Signs",
+  "@stopSigns": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutApp": "About App",
+  "@aboutApp": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "readMore": "Read More",
+  "@readMore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "readLess": "Read Less",
+  "@readLess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ok": "Ok",
+  "@ok": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchToSurah": "Search To Surah",
+  "@searchToSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addReminder": "Add New Reminder",
+  "@addReminder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastListen": "Last Listen",
+  "@lastListen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hizb": "Hizb",
+  "@hizb": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareText": "As text",
+  "@shareText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareImage": "As an image",
+  "@shareImage": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareAudio": "As audio",
+  "@shareAudio": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareImageWTrans": "As an image with additional content",
+  "@shareImageWTrans": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareTrans": "Note: Sharing the interpretation in an image only supports the interpretation of Al-Saadi, because the interpretation is not lengthy.",
+  "@shareTrans": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "translation": "Translation",
+  "@translation": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search": "Search",
+  "@search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "surahsList": "Surahs List",
+  "@surahsList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmarksList": "Bookmarks List",
+  "@bookmarksList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copy": "Copy",
+  "@copy": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareTafseer": "Share",
+  "@shareTafseer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addToBookmark": "Add To Bookmark",
+  "@addToBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "repeatSurah": "Repeat Surah",
+  "@repeatSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pauseSurah": "Pause Surah",
+  "@pauseSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "replaySurah": "Replay Surah",
+  "@replaySurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "skipToPrevious": "Skip To Previous",
+  "@skipToPrevious": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deletedPlayList": "The playlist has been deleted",
+  "@deletedPlayList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createPlayList": "Create the playlist",
+  "@createPlayList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "playList": "Playlists",
+  "@playList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "playListName": "Type the name of the playlist",
+  "@playListName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "from": "From",
+  "@from": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "to": "To",
+  "@to": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "surah": "Surah",
+  "@surah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "chooseSurah": "Choose Surah",
+  "@chooseSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "segments": "Segments",
+  "@segments": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addSegment": "Add Segment",
+  "@addSegment": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "repeatCount": "Repeat Count",
+  "@repeatCount": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sleepTimer": "Sleep Timer",
+  "@sleepTimer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hour": "Hour",
+  "@hour": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "minutes": "Minutes",
+  "@minutes": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "of": "of",
+  "@of": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quran": "The Holy Quran",
+  "@quran": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quranAudio": "Audio Mushaf",
+  "@quranAudio": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "startScreen": "Start Screen",
+  "@startScreen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectScreen": "Choose Start Screen",
+  "@selectScreen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyZeker": "Prayer of the Day",
+  "@dailyZeker": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lang": "English",
+  "@lang": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "juz": "Part",
+  "@juz": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sajda": "Prostration",
+  "@sajda": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pages": "Pages",
+  "@pages": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ayahs": "Ayahs",
+  "@ayahs": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "eidGreetingContent": "May Allah accept from us and from you fasting, prayer, and righteous deeds.",
+  "@eidGreetingContent": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "eidGreetingContent2": "Every year and you are closer to Allah.",
+  "@eidGreetingContent2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "eidGreetingTitle": "Eid Mubarak",
+  "@eidGreetingTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ramadhanMubarak": "Ramadhan Mubarak",
+  "@ramadhanMubarak": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "home": "Home",
+  "@home": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "skip": "Skip",
+  "@skip": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "What's New": "What's New",
+  "@What's New": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "What'sNewTitle": "New and user-friendly interface:",
+  "@What'sNewTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ourApps": "Our Apps",
+  "@ourApps": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "choseQuran": "Choose Reading Mode",
+  "@choseQuran": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "blueMode": "Blue",
+  "@blueMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "brownMode": "Brown",
+  "@brownMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "oldMode": "Old",
+  "@oldMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "darkMode": "Dark",
+  "@darkMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sunday": "Sunday",
+  "@Sunday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Monday": "Monday",
+  "@Monday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Tuesday": "Tuesday",
+  "@Tuesday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Wednesday": "Wednesday",
+  "@Wednesday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Thursday": "Thursday",
+  "@Thursday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Friday": "Friday",
+  "@Friday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Saturday": "Saturday",
+  "@Saturday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "RemainsUntilTheEndOf": "Remains until the end of",
+  "@RemainsUntilTheEndOf": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Muharram": "Muharram",
+  "@Muharram": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Safar": "Safar",
+  "@Safar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Rabi' Al-Awwal": "Rabi' Al-Awwal",
+  "@Rabi' Al-Awwal": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Rabi' Al-Thani": "Rabi' Al-Thani",
+  "@Rabi' Al-Thani": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Jumada Al-Awwal": "Jumada Al-Awwal",
+  "@Jumada Al-Awwal": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Jumada Al-Thani": "Jumada Al-Thani",
+  "@Jumada Al-Thani": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Rajab": "Rajab",
+  "@Rajab": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sha'aban": "Sha'aban",
+  "@Sha'aban": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Ramadan": "Ramadan",
+  "@Ramadan": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Shawwal": "Shawwal",
+  "@Shawwal": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Dhu Al-Qi'dah": "Dhu al-Qi'dah",
+  "@Dhu Al-Qi'dah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Dhu Al-Hijjah": "Dhu al-Hijjah",
+  "@Dhu Al-Hijjah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Day": "Day",
+  "@Day": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Days": "Days",
+  "@Days": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hijriNote": "Note: Please be aware that there might be a slight difference in the specified times as the Hijri calendar is based on the direct sighting of the crescent moon. We make every effort to ensure the accuracy of the announced dates, taking into account that the calendar will be corrected in case of the moon sighting.",
+  "@hijriNote": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "AH": "AH",
+  "@AH": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Fajr": "Fajr",
+  "@Fajr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sunrise": "Sunrise",
+  "@Sunrise": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Dhuhr": "Dhuhr",
+  "@Dhuhr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Asr": "Asr",
+  "@Asr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Maghrib": "Maghrib",
+  "@Maghrib": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Isha": "Isha",
+  "@Isha": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Last Third": "The last third",
+  "@Last Third": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Middle of the Night": "Midnight",
+  "@Middle of the Night": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafsirLibrary": "Tafsir Library",
+  "@tafsirLibrary": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "allBooks": "All Books",
+  "@allBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "myLibrary": "My Library",
+  "@myLibrary": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmark": "Bookmarks",
+  "@bookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "chapterBook": "Chapters of the Book",
+  "@chapterBook": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutBook": "About the Book",
+  "@aboutBook": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "khatmah": "Khatmah",
+  "@khatmah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createKhatmah": "Create the Khatmah",
+  "@createKhatmah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "khatmahName": "Name of the Khatmah",
+  "@khatmahName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addKhatmah": "Add a Khatmah",
+  "@addKhatmah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "duration": "Duration",
+  "@duration": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "divisionBySahabah": "Division by the Sahabah",
+  "@divisionBySahabah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "choiceColor": "Choose the color",
+  "@choiceColor": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchInBooks": "Search in Books",
+  "@searchInBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hasPassed": "Has passed",
+  "@hasPassed": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloading": "Downloading...",
+  "@downloading": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "startHijriYear": "Start of the Hijri Year",
+  "@startHijriYear": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderToFastTasoo'a": "Reminder for the Fasting of Tasu'a",
+  "@reminderToFastTasoo'a": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderToFastAshura": "Reminder for the Fasting of Ashura",
+  "@reminderToFastAshura": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ramadhan": "Ramadan Month",
+  "@ramadhan": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "nightOfQadir": "Reminder for Laylat al-Qadr",
+  "@nightOfQadir": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "EidAl-Fitr": "Eid al-Fitr",
+  "@EidAl-Fitr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sexShawwal": "Reminder for the Fasting of Six Days of Shawwal",
+  "@sexShawwal": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "arafahReminder": "Reminder for the Fasting on the Day of Arafah",
+  "@arafahReminder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tenDaysOfDhul-Hijjah": "The First Ten Days of Dhul Hijjah",
+  "@tenDaysOfDhul-Hijjah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "EidAl-Adha": "Eid al-Adha",
+  "@EidAl-Adha": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "choiceBackgroundColor": "Choose background color",
+  "@choiceBackgroundColor": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reset": "Reset",
+  "@reset": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Medinan": "Medinan",
+  "@Medinan": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Meccan": "Meccan",
+  "@Meccan": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "surahNames": "Names of the Surah",
+  "@surahNames": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutSurah": "About the Surah",
+  "@aboutSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notification": "Notifications",
+  "@notification": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noNotifications": "No notifications",
+  "@noNotifications": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminders": "Reminders",
+  "@reminders": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "customReminder": "Custom reminder",
+  "@customReminder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addMore": "Add more",
+  "@addMore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "What'sNewDetails10": "۞ Added an auto-scroll feature on the Qur'an page, allowing comfortable reading without manually navigating between pages.\n۞ Added the reciter Ali Jaber.",
+  "@What'sNewDetails10": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "chooseDhekr": "Set a time for reflection.",
+  "@chooseDhekr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectTime": "Choose the remembrance.",
+  "@selectTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadBookFirst": "Please download the book first.",
+  "@downloadBookFirst": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastDayOf": "The last day of the month of",
+  "@lastDayOf": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "booksDownloaded": "The book has been downloaded.",
+  "@booksDownloaded": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "booksDeleted": "The book has been deleted.",
+  "@booksDeleted": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noBooksDownloaded": "You have not downloaded any book yet.",
+  "@noBooksDownloaded": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notifyQuranBody": "You stopped at page @currentPageNumber in the Quran, would you like to continue?",
+  "@notifyQuranBody": {
+    "type": "text",
+    "placeholders": {
+      "currentPageNumber": {}
+    }
+  },
+  "notifyAdhkarBody": "Don't forget to read @adhkarType",
+  "@notifyAdhkarBody": {
+    "type": "text",
+    "placeholders": {
+      "adhkarType": {}
+    }
+  },
+  "notifyBooksBody": "Don't forget to continue reading the book @bookName",
+  "@notifyBooksBody": {
+    "type": "text",
+    "placeholders": {
+      "bookName": {}
+    }
+  },
+  "notifyListenBody": "Don't forget to continue listening to the surahs",
+  "@notifyListenBody": {
+    "type": "text",
+    "placeholders": {
+      "bookName": {}
+    }
+  },
+  "lastSearch": "Last Search",
+  "@lastSearch": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ashura": "Ashura",
+  "@ashura": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "arafah": "Day of Arafah",
+  "@arafah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "editHijriDay": "Edit Hijri Day",
+  "@editHijriDay": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "defaultFontText": "Default Font",
+  "@defaultFontText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadedFontsText": "Quran Font",
+  "@downloadedFontsText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fonts": "Fonts",
+  "@fonts": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fontsNotes": "For a better experience and optimal Quran appearance, please download its fonts.",
+  "@fontsNotes": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "calenderSettings": "Calendar Settings",
+  "@calenderSettings": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "islamicCalendar": "Islamic Calendar",
+  "hijriCalendar": "Hijri Calendar",
+  "calendar": "Calendar",
+  "events": "Events",
+  "year": "Year",
+  "month": "Month",
+  "hijri": "Hijri",
+  "Sun": "Sun",
+  "@Sun": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Mon": "Mon",
+  "@Mon": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Tue": "Tue",
+  "@Tue": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Wed": "Wed",
+  "@Wed": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Thu": "Thu",
+  "@Thu": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Fri": "Fri",
+  "@Fri": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sat": "Sat",
+  "@Sat": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "manager_ayah_downloads": "Manage Ayah Downloads",
+  "load_error": "Failed to load data for this word.",
+  "no_data": "No data available for this word.", 
+  "recitations": "Recitations",
+  "tasreef": "Conjugation",
+  "eerab": "I'rab",
+  "unavailableDataTemplate": "@kind data is not downloaded on this device",
+  "@unavailableDataTemplate": {
+    "type": "text",
+    "placeholders": {
+      "kind": {}
+    }
+  },
+  "mushafOrthographicMarks": "Mushaf Diacritics",
+  "bookRemovedFromLastRead": "Book removed from Last Read",
+  "hadiths": "Hadiths",
+  "sixthBooks": "The Six Books",
+  "ninthBooks": "The Nine Books",
+  "noHadithBooks": "No Hadith books are downloaded on this device.",
+  "noTafsirBooks": "No Tafsir books are downloaded on this device.",
+  "noBooks": "No books.",
+  "bookJuz": "Book Parts",
+  "downloadBookFirstToSeeTheContents": "Please download the book first to view the contents",
+  "chapter": "Chapter",
+  "goToStartOfJuz": "Go to the start of the part",
+  "noBooksReadedYet": "You haven't read any book yet.",
+  "noBooksFoundForSearch": "No books found.",
+  "islamicLibrary": "Islamic Library",
+  "tajweed": "With Tajweed",
+  "useEnglishNumbers": "Use English numbers",
+  "changeTafsir": "Change Tafsir",
+  "mutashabihat": "Similar verses",
+  "no_mutashabihat": "No similar phrases found for this ayah",
+  "browse_mutashabihat": "Browse similar verses",
+  "mutashabihat_in": "Similar verses in",
+  "repeated": "Repetition",
+  "times": "times",
+  "surahs": "Surahs",
+  "ayah": "Ayah",
+  "tajweedUnavailableText": "Tajweed rules data is not downloaded.",
+  "tajweedSurahNumberErrorText": "Failed to determine the surah number",
+  "tajweedLoadErrorText": "Failed to load Tajweed rules data",
+  "tajweedNoDataText": "No Tajweed data available for this ayah.",
+  "twoDays": "Two days",
+  "searchInBook": "Search in the book",
+  "autoScrollSettings": "Auto scroll settings",
+  "stopCondition": "Stop at:",
+  "pageCount": "Page count:",
+  "speed": "Speed:",
+  "slow": "Slow",
+  "fast": "Fast",
+  "nextHizb": "Next Hizb",
+  "nextJuz": "Next Juz",
+  "manual": "Manual"
+}

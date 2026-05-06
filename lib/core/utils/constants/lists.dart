@@ -1,0 +1,373 @@
+import 'package:get/get.dart';
+
+import '/presentation/screens/home/home_screen.dart';
+import '/presentation/screens/mushaf_orthographic/alwaqf_screen.dart';
+import '../../../presentation/screens/adhkar/screens/adhkar_view.dart';
+import '../../../presentation/screens/books/books.dart';
+import '../../../presentation/screens/quran_page/quran.dart';
+import '../../../presentation/screens/surah_audio/surah_audio.dart';
+import 'api_constants.dart';
+
+List<String> translateName = <String>[
+  'nothing',
+  'English',
+  'Español',
+  'বাংলা',
+  'اردو',
+  'Soomaali',
+  'bahasa Indonesia',
+  'کوردی',
+  'Türkçe',
+  'Filipino',
+];
+
+List<String> shareTranslateName = <String>[
+  'English',
+  'Español',
+  'বাংলা',
+  'اردو',
+  'Soomaali',
+  'bahasa Indonesia',
+  'کوردی',
+  'Türkçe',
+  'Filipino',
+  // 'تفسير السعدي'
+];
+
+const List<String> semanticsTranslateName = <String>[
+  'nothing',
+  'English',
+  'Spanish',
+  'Bengal',
+  'Urdu',
+  'Somali',
+  'Indonesian',
+  'kurdish',
+  'turkish',
+  'filipino',
+];
+
+final List screensList = [
+  {
+    'name': 'home',
+    'svgUrl': 'assets/svg/splash_icon_w.svg',
+    'imagePath': 'assets/images/home.png',
+    'route': () => const HomeScreen(),
+    'width': 240.0,
+  },
+  {
+    'name': 'quran',
+    'svgUrl': 'assets/svg/splash_icon_w.svg',
+    'imagePath': 'assets/images/pages.png',
+    'route': () => QuranHome(),
+    'width': 240.0,
+  },
+  {
+    'name': '',
+    'svgUrl': 'assets/svg/alwaqf.svg',
+    'imagePath': 'assets/images/audio.png',
+    'route': () => AlwaqfScreen(),
+    'width': 70.0,
+  },
+  {
+    'name': 'azkar',
+    'svgUrl': 'assets/svg/azkar.svg',
+    'imagePath': 'assets/images/athkar.png',
+    'route': () => const AdhkarView(),
+    'width': 70.0,
+  },
+  {
+    'name': 'quranAudio',
+    'svgUrl': 'assets/svg/quran_au_ic.svg',
+    'imagePath': 'assets/images/audio.png',
+    'route': () => AudioScreen(),
+    'width': 240.0,
+  },
+  {
+    'name': 'tafsirLibrary',
+    'svgUrl': 'assets/svg/tafseer_white.svg',
+    'imagePath': 'assets/images/tafsir_books.jpg',
+    'route': () => BooksScreen(),
+    'width': 326.0,
+  },
+];
+
+const List surahReaderInfo = [
+  {
+    'name': 'reader1',
+    'readerD': '${ApiConstants.surahUrl1}',
+    'readerN': 'abdul_basit_murattal/',
+    'readerI': 'basit',
+  },
+  {
+    'name': 'reader2',
+    'readerD': '${ApiConstants.surahUrl1}',
+    'readerN': 'muhammad_siddeeq_al-minshaawee/',
+    'readerI': 'minshawy',
+  },
+  {
+    'name': 'reader3',
+    'readerD': '${ApiConstants.surahUrl1}',
+    'readerN': 'mahmood_khaleel_al-husaree_iza3a/',
+    'readerI': 'husary',
+  },
+  {
+    'name': 'reader4',
+    'readerD': '${ApiConstants.surahUrl1}',
+    'readerN': 'ahmed_ibn_3ali_al-3ajamy/',
+    'readerI': 'ajamy',
+  },
+  {
+    'name': 'reader5',
+    'readerD': '${ApiConstants.surahUrl1}',
+    'readerN': 'maher_almu3aiqly/year1440/',
+    'readerI': 'muaiqly',
+  },
+  {
+    'name': 'reader6',
+    'readerD': '${ApiConstants.surahUrl1}',
+    'readerN': 'sa3ood_al-shuraym/',
+    'readerI': 'saood',
+  },
+  {
+    'name': 'reader7',
+    'readerD': '${ApiConstants.surahUrl1}',
+    'readerN': 'sa3d_al-ghaamidi/complete/',
+    'readerI': 'Ghamadi',
+  },
+  {
+    'name': 'reader8',
+    'readerD': '${ApiConstants.surahUrl1}',
+    'readerN': 'mustafa_al3azzawi/',
+    'readerI': 'mustafa',
+  },
+  {
+    'name': 'reader9',
+    'readerD': '${ApiConstants.surahUrl1}',
+    'readerN': 'nasser_bin_ali_alqatami/',
+    'readerI': 'nasser',
+  },
+  {
+    'name': 'reader10',
+    'readerD': '${ApiConstants.surahUrl2}',
+    'readerN': 'peshawa/Rewayat-Hafs-A-n-Assem/',
+    'readerI': 'qader',
+  },
+  {
+    'name': 'reader11',
+    'readerD': '${ApiConstants.surahUrl3}',
+    'readerN': 'taher/',
+    'readerI': 'taher',
+  },
+  {
+    'name': 'reader12',
+    'readerD': '${ApiConstants.surahUrl4}',
+    'readerN': 'aloosi/',
+    'readerI': 'aloosi',
+  },
+  {
+    'name': 'reader13',
+    'readerD': '${ApiConstants.surahUrl4}',
+    'readerN': 'wdee3/',
+    'readerI': 'wdee3',
+  },
+  {
+    'name': 'reader14',
+    'readerD': '${ApiConstants.surahUrl1}',
+    'readerN': 'yasser_ad-dussary/',
+    'readerI': 'yasser_ad-dussary',
+  },
+  {
+    'name': 'reader15',
+    'readerD': '${ApiConstants.surahUrl1}',
+    'readerN': 'abdullaah_3awwaad_al-juhaynee/',
+    'readerI': 'Juhaynee',
+  },
+  {
+    'name': 'reader16',
+    'readerD': '${ApiConstants.surahUrl1}',
+    'readerN': 'fares/',
+    'readerI': 'Fares',
+  },
+  {
+    'name': 'reader17',
+    'readerD': '${ApiConstants.surahUrl1}',
+    'readerN': 'muhammad_ayyoob_hq/',
+    'readerI': 'ayyoob',
+  },
+  {
+    'name': 'reader18',
+    'readerD': '${ApiConstants.surahUrl3}',
+    'readerN': 'maher/',
+    'readerI': 'maher',
+  },
+  {
+    'name': 'reader19',
+    'readerD': '${ApiConstants.surahUrl2}',
+    'readerN': 'nufais/Rewayat-Hafs-A-n-Assem/',
+    'readerI': 'nufais',
+  },
+  {
+    'name': 'reader20',
+    'readerD': '${ApiConstants.surahUrl5}',
+    'readerN': 'yasser/',
+    'readerI': 'yasser_ad-dussary',
+  },
+];
+
+List tafsirNameList = [
+  {'name': '${'tafIbnkatheerN'.tr}', 'bookName': '${'tafIbnkatheerD'.tr}'},
+  {'name': '${'tafBaghawyN'.tr}', 'bookName': '${'tafBaghawyD'.tr}'},
+  {'name': '${'tafQurtubiN'.tr}', 'bookName': '${'tafQurtubiD'.tr}'},
+  {'name': '${'tafSaadiN'.tr}', 'bookName': '${'tafSaadiD'.tr}'},
+  {'name': '${'tafTabariN'.tr}', 'bookName': '${'tafTabariD'.tr}'},
+  {'name': 'English', 'bookName': ''},
+  {'name': 'Español', 'bookName': ''},
+  {'name': 'বাংলা', 'bookName': ''},
+  {'name': 'اردو', 'bookName': ''},
+  {'name': 'Soomaali', 'bookName': ''},
+  {'name': 'bahasa Indonesia', 'bookName': ''},
+  {'name': 'کوردی', 'bookName': ''},
+  {'name': 'Türkçe', 'bookName': ''},
+];
+
+const List tafsirNameRandom = [
+  {'name': '${'tafIbnkatheerN'}', 'bookName': '${'tafIbnkatheerD'}'},
+  {'name': '${'tafBaghawyN'}', 'bookName': '${'tafBaghawyD'}'},
+  {'name': '${'tafQurtubiN'}', 'bookName': '${'tafQurtubiD'}'},
+  {'name': '${'tafSaadiN'}', 'bookName': '${'tafSaadiD'}'},
+  {'name': '${'tafTabariN'}', 'bookName': '${'tafTabariD'}'},
+];
+
+const List ayahReaderInfo = [
+  {
+    'name': 'reader1',
+    'readerD': 'Abdul_Basit_Murattal_192kbps',
+    'readerI': 'basit',
+    'url': ApiConstants.ayahs2ndSource,
+  },
+  {
+    'name': 'reader2',
+    'readerD': 'Minshawy_Murattal_128kbps',
+    'readerI': 'minshawy',
+    'url': ApiConstants.ayahs2ndSource,
+  },
+  {
+    'name': 'reader3',
+    'readerD': 'Husary_128kbps',
+    'readerI': 'husary',
+    'url': ApiConstants.ayahs2ndSource,
+  },
+  {
+    'name': 'reader4',
+    'readerD': '128/ar.ahmedajamy',
+    'readerI': 'ajamy',
+    'url': ApiConstants.ayahs1stSource,
+  },
+  {
+    'name': 'reader5',
+    'readerD': 'MaherAlMuaiqly128kbps',
+    'readerI': 'muaiqly',
+    'url': ApiConstants.ayahs2ndSource,
+  },
+  {
+    'name': 'reader6',
+    'readerD': 'Saood_ash-Shuraym_128kbps',
+    'readerI': 'saood',
+    'url': ApiConstants.ayahs2ndSource,
+  },
+  {
+    'name': 'reader15',
+    'readerD': 'Abdullaah_3awwaad_Al-Juhaynee_128kbps',
+    'readerI': 'Juhaynee',
+    'url': ApiConstants.ayahs2ndSource,
+  },
+  {
+    'name': 'reader16',
+    'readerD': 'Fares_Abbad_64kbps',
+    'readerI': 'Fares',
+    'url': ApiConstants.ayahs2ndSource,
+  },
+  {
+    'name': 'reader17',
+    'readerD': '128/ar.muhammadayyoub',
+    'readerI': 'ayyoob',
+    'url': ApiConstants.ayahs1stSource,
+  },
+  {
+    'name': 'reader18',
+    'readerD': 'MaherAlMuaiqly128kbps',
+    'readerI': 'maher',
+    'url': ApiConstants.ayahs2ndSource,
+  },
+  {
+    'name': 'reader20',
+    'readerD': 'Yasser_Ad-Dussary_128kbps',
+    'readerI': 'yasser_ad-dussary',
+    'url': ApiConstants.ayahs2ndSource,
+  },
+];
+
+const List monthHadithsList = [
+  {
+    'hadithPart1': '',
+    'hadithPart2':
+        'أَفْضَلُ الصِّيامِ، بَعْدَ رَمَضانَ، شَهْرُ اللهِ المُحَرَّمُ، وأَفْضَلُ الصَّلاةِ، بَعْدَ الفَرِيضَةِ، صَلاةُ اللَّيْلِ.\n',
+    'bookName':
+        'الراوي : أبو هريرة | المحدث : مسلم | المصدر : صحيح مسلم | الصفحة أو الرقم : 1163',
+  },
+  {
+    'hadithPart1':
+        'كان أصحابُ النَّبيِّ صلَّى اللَّهُ عليهِ وآلِهِ وسلَّمَ يَتعلَّمونَ الدُّعاءَ كمَا يتعلَّمونَ القُرْآنَ إذا دخل الشَّهرُ أوِ السَّنةُ : ',
+    'hadithPart2':
+        'اللَّهُمَّ أدْخِلْهُ علينا بالأمْنِ والإيمَانِ والسَّلامَةِ والإسْلامِ وجِوارٍ منَ الشَّيطَانِ ورِضْوانٍ مَنَ الرَّحمَنِ.\n',
+    'bookName':
+        'الراوي : عبدالله بن هشام | المحدث : ابن حجر العسقلاني | المصدر : الإصابة في تمييز الصحابة | الصفحة أو الرقم : 2/378 | خلاصة حكم المحدث : موقوف على شرط الصحيح ',
+  },
+  {'hadithPart1': '', 'hadithPart2': '', 'bookName': ''},
+  {'hadithPart1': '', 'hadithPart2': '', 'bookName': ''},
+  {'hadithPart1': '', 'hadithPart2': '', 'bookName': ''},
+  {'hadithPart1': '', 'hadithPart2': '', 'bookName': ''},
+  {
+    'hadithPart1': '',
+    'hadithPart2':
+        'الزَّمانُ قَدِ اسْتَدارَ كَهَيْئَتِهِ يَومَ خَلَقَ اللَّهُ السَّمَواتِ والأرْضَ، السَّنَةُ اثْنا عَشَرَ شَهْرًا، مِنْها أرْبَعَةٌ حُرُمٌ، ثَلاثَةٌ مُتَوالِياتٌ: ذُو القَعْدَةِ وذُو الحِجَّةِ والمُحَرَّمُ، ورَجَبُ مُضَرَ، الذي بيْنَ جُمادَى وشَعْبانَ.\n',
+    'bookName':
+        'الراوي : أبو بكرة نفيع بن الحارث | المحدث : البخاري | المصدر : صحيح البخاري | الصفحة أو الرقم : 3197',
+  },
+  {
+    'hadithPart1': '',
+    'hadithPart2':
+        'عَنْ عَائِشَةَ رَضِيَ اللَّهُ عَنْهَا، قَالَتْ: كانَ رَسولُ اللَّهِ صَلَّى اللهُ عليه وسلَّمَ يَصُومُ حتَّى نَقُولَ: لا يُفْطِرُ، ويُفْطِرُ حتَّى نَقُولَ: لا يَصُومُ، فَما رَأَيْتُ رَسولَ اللَّهِ صَلَّى اللهُ عليه وسلَّمَ اسْتَكْمَلَ صِيَامَ شَهْرٍ إلَّا رَمَضَانَ، وما رَأَيْتُهُ أكْثَرَ صِيَامًا منه في شَعْبَانَ.\n',
+    'bookName':
+        'الراوي : عائشة أم المؤمنين | المحدث : البخاري | المصدر : صحيح البخاري | الصفحة أو الرقم : 1969',
+  },
+  {
+    'hadithPart1': '',
+    'hadithPart2':
+        'مَن قَامَ رَمَضَانَ إيمَانًا واحْتِسَابًا، غُفِرَ له ما تَقَدَّمَ مِن ذَنْبِهِ.\n',
+    'bookName':
+        'الراوي : أبو هريرة | المحدث : البخاري | المصدر : صحيح البخاري | الصفحة أو الرقم : 37',
+  },
+  {
+    'hadithPart1': '',
+    'hadithPart2':
+        'مَن صامَ رَمَضانَ ثُمَّ أتْبَعَهُ سِتًّا مِن شَوَّالٍ، كانَ كَصِيامِ الدَّهْرِ.\n',
+    'bookName':
+        'الراوي : أبو أيوب الأنصاري | المحدث : مسلم | المصدر : صحيح مسلم | الصفحة أو الرقم : 1164',
+  },
+  {
+    'hadithPart1': '',
+    'hadithPart2':
+        'الزَّمانُ قَدِ اسْتَدارَ كَهَيْئَتِهِ يَومَ خَلَقَ اللَّهُ السَّمَواتِ والأرْضَ، السَّنَةُ اثْنا عَشَرَ شَهْرًا، مِنْها أرْبَعَةٌ حُرُمٌ، ثَلاثَةٌ مُتَوالِياتٌ: ذُو القَعْدَةِ وذُو الحِجَّةِ والمُحَرَّمُ، ورَجَبُ مُضَرَ، الذي بيْنَ جُمادَى وشَعْبانَ.\n',
+    'bookName':
+        'الراوي : أبو بكرة نفيع بن الحارث | المحدث : البخاري | المصدر : صحيح البخاري | الصفحة أو الرقم : 3197',
+  },
+  {
+    'hadithPart1': '',
+    'hadithPart2':
+        'شَهْرَانِ لا يَنْقُصَانِ، شَهْرَا عِيدٍ: رَمَضَانُ، وذُو الحَجَّةِ.\n',
+    'bookName':
+        'الراوي : أبو بكرة نفيع بن الحارث | المحدث : البخاري | المصدر : صحيح البخاري | الصفحة أو الرقم : 1912',
+  },
+];

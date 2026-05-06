@@ -1,0 +1,157 @@
+import 'package:alquranalkareem/core/utils/helpers/app_text_styles.dart';
+import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
+import 'package:get/get_utils/get_utils.dart';
+
+import '/core/utils/constants/extensions/svg_extensions.dart';
+import '../utils/constants/svg_constants.dart';
+
+class CustomButton extends StatelessWidget {
+  final String? svgPath;
+  final VoidCallback onPressed;
+  final double? height;
+  final double? width;
+  final Color? backgroundColor;
+  final Color? shadowColor;
+  final Color? svgColor;
+  final IconData? icon;
+  final double? iconSize;
+  final String? title;
+  final Color? titleColor;
+  final Color? borderColor;
+  final Widget? iconWidget;
+  final bool? isCustomSvgColor;
+  final double? horizontalPadding;
+  final double? verticalPadding;
+  const CustomButton({
+    super.key,
+    this.svgPath,
+    required this.onPressed,
+    this.width,
+    this.height,
+    this.backgroundColor,
+    this.shadowColor,
+    this.svgColor,
+    this.icon,
+    this.iconSize,
+    this.title,
+    this.titleColor,
+    this.borderColor,
+    this.iconWidget,
+    this.isCustomSvgColor = false,
+    this.horizontalPadding,
+    this.verticalPadding,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final effectiveIconSize = iconSize ?? 25;
+    final defaultSize = effectiveIconSize + (horizontalPadding ?? 4.0) * 2;
+    return SizedBox(
+      height: height ?? defaultSize,
+      width: width ?? defaultSize,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: backgroundColor ?? Colors.transparent,
+          shadowColor: shadowColor ?? Colors.transparent,
+          padding: EdgeInsets.symmetric(
+            horizontal: horizontalPadding ?? 4.0,
+            vertical: verticalPadding ?? 4.0,
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8.0),
+            side: BorderSide(
+              color: borderColor ?? Colors.transparent,
+              width: 1,
+            ),
+          ),
+        ),
+        onPressed: onPressed,
+        child: title != null
+            ? Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  title != null
+                      ? Text(
+                          title!.tr,
+                          style: AppTextStyles.titleMedium(
+                            color:
+                                titleColor ??
+                                context.theme.colorScheme.secondaryContainer,
+                            height: 1.4,
+                          ),
+                          textAlign: TextAlign.center,
+                        )
+                      : const SizedBox.shrink(),
+                  title != null ? const Gap(16) : const SizedBox.shrink(),
+                  svgPath != null
+                      ? isCustomSvgColor!
+                            ? SizedBox(
+                                height: iconSize ?? 25,
+                                width: iconSize ?? 25,
+                                child: customSvgWithColor(
+                                  svgPath ?? SvgPath.svgAlert,
+                                  height: iconSize ?? 25,
+                                  width: iconSize ?? 25,
+                                  color:
+                                      svgColor ??
+                                      context
+                                          .theme
+                                          .colorScheme
+                                          .secondaryContainer,
+                                ),
+                              )
+                            : SizedBox(
+                                height: iconSize ?? 25,
+                                width: iconSize ?? 25,
+                                child: customSvgWithCustomColor(
+                                  svgPath ?? SvgPath.svgAlert,
+                                  height: iconSize ?? 25,
+                                  width: iconSize ?? 25,
+                                  color:
+                                      svgColor ??
+                                      context.theme.primaryColorLight,
+                                ),
+                              )
+                      : Icon(
+                          icon ?? Icons.cloud_download_outlined,
+                          size: iconSize ?? 25,
+                          color: svgColor ?? context.theme.primaryColorLight,
+                        ),
+                ],
+              )
+            : svgPath != null
+            ? isCustomSvgColor!
+                  ? SizedBox(
+                      height: iconSize ?? 25,
+                      width: iconSize ?? 25,
+                      child: customSvgWithColor(
+                        svgPath ?? SvgPath.svgAlert,
+                        width: iconSize ?? 25,
+                        height: iconSize ?? 25,
+                        color:
+                            svgColor ??
+                            context.theme.colorScheme.secondaryContainer,
+                      ),
+                    )
+                  : SizedBox(
+                      height: iconSize ?? 25,
+                      width: iconSize ?? 25,
+                      child: customSvgWithCustomColor(
+                        svgPath ?? SvgPath.svgAlert,
+                        width: iconSize ?? 25,
+                        height: iconSize ?? 25,
+                        color: svgColor ?? context.theme.primaryColorLight,
+                      ),
+                    )
+            : iconWidget ??
+                  Icon(
+                    icon ?? Icons.cloud_download_outlined,
+                    size: iconSize ?? 25,
+                    color: svgColor ?? context.theme.primaryColorLight,
+                  ),
+      ),
+    );
+  }
+}

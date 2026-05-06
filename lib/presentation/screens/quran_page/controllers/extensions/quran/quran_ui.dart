@@ -1,0 +1,197 @@
+part of '../../../quran.dart';
+
+extension QuranUi on QuranController {
+  /// -------- [onTap] --------
+
+  void changeSurahListOnTap(int page) {
+    state._quranRepository.saveLastPage(page);
+    // QuranController.instance.state.box.write(MSTART_PAGE, page);
+    QuranCtrl.instance.state.currentPageNumber.value = page;
+    QuranLibrary.quranCtrl.quranPagesController.jumpToPage(page - 1);
+    if (state.navBarController.isOpen) {
+      state.navBarController.close();
+      setNavBarType = NavBarType.none;
+    } else if (state.tabBarController.isOpen) {
+      state.tabBarController.close();
+      setTopBarType = TopBarType.none;
+    }
+  }
+
+  void toggleAyahSelection(int index) {
+    if (state.selectedAyahIndexes.contains(index)) {
+      state.selectedAyahIndexes.remove(index);
+      update(['clearSelection']);
+    } else {
+      state.selectedAyahIndexes.clear();
+      state.selectedAyahIndexes.add(index);
+      state.selectedAyahIndexes.refresh();
+      update(['clearSelection']);
+    }
+    state.selectedAyahIndexes.refresh();
+    update(['clearSelection']);
+  }
+
+  void clearAndAddSelection(int index) {
+    state.selectedAyahIndexes.clear();
+    state.selectedAyahIndexes.add(index);
+    state.selectedAyahIndexes.refresh();
+    update(['clearSelection']);
+  }
+
+  void showControl() {
+    if (state.tabBarController.isHandleVisible ||
+        state.navBarController.isHandleVisible) {
+      state.tabBarController.hideHandle();
+      state.navBarController.hideHandle();
+    } else {
+      state.tabBarController.showHandle();
+      state.navBarController.showHandle();
+    }
+    GeneralController.instance.state.isShowControl.toggle();
+    GeneralController.instance.update(['showControl']);
+    QuranCtrl.instance.isShowControl.toggle();
+  }
+
+  void toggleMenu(String verseKey) {
+    var currentState = state.moreOptionsMap[verseKey] ?? false;
+    state.moreOptionsMap[verseKey] = !currentState;
+    state.moreOptionsMap.forEach((key, value) {
+      if (key != verseKey) state.moreOptionsMap[key] = false;
+    });
+    update(['ayahs_menu']);
+  }
+
+  void pageChanged(int index) {
+    QuranCtrl.instance.state.currentPageNumber.value = index;
+    // sl<PlayListController>().reset();
+    GeneralController.instance.state.isShowControl.value = false;
+    // AudioCtrl.instance.state.pageAyahNumber = '0';
+
+    SchedulerBinding.instance.scheduleTask(() {
+      state.lastReadSurahNumber.value = getSurahNumberFromPage(index + 1);
+      state._quranRepository.saveLastPage(index);
+      state.box
+        // ..write(MSTART_PAGE, index)
+        ..write(MLAST_URAH, state.lastReadSurahNumber.value);
+    }, Priority.idle);
+  }
+
+  void pageModeOnTap(bool value) {
+    update();
+    Get.back();
+  }
+
+  KeyEventResult controlRLByKeyboard(FocusNode node, KeyEvent event) {
+    if (event.logicalKey == LogicalKeyboardKey.arrowLeft) {
+      QuranLibrary.quranCtrl.quranPagesController.nextPage(
+        duration: const Duration(milliseconds: 600),
+        curve: Curves.easeInOut,
+      );
+      return KeyEventResult.handled;
+    } else if (event.logicalKey == LogicalKeyboardKey.arrowRight) {
+      QuranLibrary.quranCtrl.quranPagesController.previousPage(
+        duration: const Duration(milliseconds: 600),
+        curve: Curves.easeInOut,
+      );
+      return KeyEventResult.handled;
+    }
+    return KeyEventResult.ignored;
+  }
+
+  KeyEventResult controlUDByKeyboard(FocusNode node, KeyEvent event) {
+    if (event.logicalKey == LogicalKeyboardKey.arrowUp) {
+      state.ScrollUpDownQuranPage.animateTo(
+        state.ScrollUpDownQuranPage.offset - 100,
+        duration: const Duration(milliseconds: 600),
+        curve: Curves.easeInOut,
+      );
+      return KeyEventResult.handled;
+    } else if (event.logicalKey == LogicalKeyboardKey.arrowDown) {
+      state.ScrollUpDownQuranPage.animateTo(
+        state.ScrollUpDownQuranPage.offset + 100,
+        duration: const Duration(milliseconds: 600),
+        curve: Curves.easeInOut,
+      );
+      return KeyEventResult.handled;
+    }
+    return KeyEventResult.ignored;
+  }
+
+  void clearSelection() {
+    if (AudioCtrl.instance.state.audioPlayer.playing) {
+      showControl();
+      // GeneralController.instance.update(['showControl']);
+    } else if (QuranLibrary.quranCtrl.selectedAyahsByUnequeNumber.isNotEmpty) {
+      QuranLibrary.quranCtrl.selectedAyahsByUnequeNumber.clear();
+      QuranLibrary.quranCtrl.selectedAyahsByUnequeNumber.refresh();
+      QuranLibrary.quranCtrl.clearSelection();
+      update(['clearSelection']);
+    } else {
+      showControl();
+      // GeneralController.instance.update(['showControl']);
+    }
+    // GlobalKeyManager().drawerKey.currentState!.closeSlider();
+  }
+
+  void showControlToggle() {
+    if (AudioCtrl.instance.state.isPlaying.value) {
+      showControl();
+      update([
+        'isShowControl',
+        'selection_page_${QuranCtrl.instance.state.currentPageNumber.value}',
+      ]);
+    } else if (QuranCtrl.instance.selectedAyahsByUnequeNumber.isNotEmpty) {
+      clearSelection();
+    } else {
+      clearSelection();
+      showControl();
+      update([
+        'isShowControl',
+        'selection_page_${QuranCtrl.instance.state.currentPageNumber.value}',
+      ]);
+    }
+  }
+
+  bool getTopBarType(TopBarType type) {
+    return state.topBarType.value == type.name;
+  }
+
+  set setTopBarType(TopBarType type) {
+    state.topBarType.value = type.name;
+  }
+
+  RxBool getNavBarType(NavBarType type) {
+    return (state.navBarType.value == type.name).obs;
+  }
+
+  set setNavBarType(NavBarType type) {
+    state.navBarType.value = type.name;
+  }
+
+  // void scrollSlowly(BuildContext context, double duration) async {
+  //   double scrollPosition = 0.0;
+  //   final double totalHeight = state.pages.length.toDouble();
+  //   final int steps = (totalHeight / 100).round();
+  //   final double stepDuration = (duration * 60 * 1000) / steps;
+  //
+  //   state.isScrolling.value = true; // بدء التمرير
+  //
+  //   for (int i = steps; i >= 0; i--) {
+  //     if (!state.itemScrollController.isAttached || !state.isScrolling.value)
+  //       break; // استخدم break للخروج من الحلقة
+  //
+  //     scrollPosition = i * 100;
+  //     state.itemScrollController.scrollTo(
+  //       index: (scrollPosition / 100).floor(),
+  //       duration: Duration(milliseconds: stepDuration.toInt()),
+  //       curve: Curves.linear,
+  //     );
+  //     await Future.delayed(Duration(milliseconds: stepDuration.toInt()));
+  //
+  //     // تحقق من حالة isScrolling بعد التأخير
+  //     if (!state.isScrolling.value) break;
+  //   }
+  //
+  //   state.isScrolling.value = false; // التمرير انتهى
+  // }
+}

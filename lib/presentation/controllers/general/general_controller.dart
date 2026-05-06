@@ -1,0 +1,101 @@
+import 'dart:async';
+
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:wakelock_plus/wakelock_plus.dart';
+
+import '/presentation/screens/home/home_screen.dart';
+import '../../../core/utils/constants/shared_preferences_constants.dart';
+import '../../screens/adhkar/screens/adhkar_view.dart';
+import '../../screens/books/books.dart';
+import '../../screens/quran_page/quran.dart';
+import '../../screens/surah_audio/surah_audio.dart';
+import 'general_state.dart';
+
+class GeneralController extends GetxController {
+  static GeneralController get instance =>
+      GetInstance().putOrFind(() => GeneralController());
+
+  GeneralState state = GeneralState();
+
+  Timer? _audioWidgetTimer;
+
+  @override
+  void onInit() async {
+    Future.delayed(const Duration(seconds: 1)).then((_) async {
+      try {
+        await WakelockPlus.enable();
+      } catch (e) {
+        print('Failed to enable wakelock: $e');
+      }
+    });
+    state.screenSelectedValue.value =
+        state.box.read(SCREEN_SELECTED_VALUE) ?? 0;
+    state.isUseEnglishNumbers.value =
+        state.box.read('isUseEnglishNumbers') ?? false;
+    // WidgetsBinding.instance.addObserver(this);
+
+    super.onInit();
+  }
+
+  @override
+  void onClose() {
+    _audioWidgetTimer?.cancel();
+    _audioWidgetTimer = null;
+    state.expansionManager.dispose();
+    super.onClose();
+  }
+
+  // @override
+  // void onClose() {
+  //   WidgetsBinding.instance.removeObserver(this);
+  //   super.onClose();
+  // }
+
+  /// -------- [Methods] ----------
+
+  /// Greeting
+  updateGreeting() {
+    final now = DateTime.now();
+    final isMorning = now.hour < 12;
+    state.greeting.value = isMorning
+        ? 'صبحكم الله بالخير'
+        : 'مساكم الله بالخير';
+  }
+
+  scrollToAyah(int ayahNumber) {
+    if (state.ayahListController.hasClients) {
+      double position = (ayahNumber - 1) * state.ayahItemWidth;
+      state.ayahListController.jumpTo(position);
+    } else {
+      print("Controller not attached to any scroll views.");
+    }
+  }
+
+  Widget screenSelect() {
+    switch (state.screenSelectedValue.value) {
+      case 0:
+        return const HomeScreen();
+      case 1:
+        return QuranHome();
+      case 3:
+        return const AdhkarView();
+      case 4:
+        return AudioScreen();
+      case 5:
+        return BooksScreen();
+      default:
+        return const HomeScreen();
+    }
+  }
+
+  void showAudioWidgetFor([Duration duration = const Duration(seconds: 2)]) {
+    state.showAudioWidgetTemporarily.value = true;
+    _audioWidgetTimer?.cancel();
+    _audioWidgetTimer = Timer(duration, () {
+      state.showAudioWidgetTemporarily.value = false;
+      update(['showControl']);
+    });
+    update(['showControl']);
+  }
+}

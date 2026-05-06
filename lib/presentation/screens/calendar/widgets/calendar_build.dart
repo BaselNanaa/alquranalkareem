@@ -1,0 +1,88 @@
+part of '../events.dart';
+
+class CalendarBuild extends StatelessWidget {
+  final int firstDayWeekday;
+  final int daysInMonth;
+  final HijriDate month;
+  CalendarBuild({
+    super.key,
+    required this.firstDayWeekday,
+    required this.daysInMonth,
+    required this.month,
+  });
+
+  final eventCtrl = EventController.instance;
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        const int rows = 6;
+        const int cols = 7;
+        final availableHeight = constraints.maxHeight;
+        final availableWidth = constraints.maxWidth;
+        final spacing = availableHeight < 300 ? 4.0 : 8.0;
+        final fontSize = availableHeight < 300 ? 13.0 : 16.0;
+
+        final cellWidth = (availableWidth - (cols - 1) * spacing) / cols;
+        final cellHeight = (availableHeight - (rows - 1) * spacing - 16) / rows;
+        final aspectRatio = (cellHeight > 0 && cellWidth > 0)
+            ? cellWidth / cellHeight
+            : 1.5;
+
+        return GridView.builder(
+          shrinkWrap: true,
+          padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 2.0),
+          physics: const NeverScrollableScrollPhysics(),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: cols,
+            childAspectRatio: aspectRatio,
+            mainAxisSpacing: spacing,
+            crossAxisSpacing: spacing,
+          ),
+          itemCount: 42,
+          itemBuilder: (context, index) {
+            final dayOffset = index - firstDayWeekday + 1;
+            if (dayOffset < 1 || dayOffset > daysInMonth) {
+              return const SizedBox();
+            }
+
+            final isCurrentDay = eventCtrl.isCurrentDay(month, dayOffset).value;
+
+            List<int> myMonths = [month.hMonth];
+            return GestureDetector(
+              onTap: eventCtrl.isEvent(myMonths, dayOffset).value
+                  ? () => eventCtrl.showEvent(dayOffset, month.hMonth)
+                  : null,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: eventCtrl.getDayColor(
+                    isCurrentDay,
+                    myMonths,
+                    dayOffset,
+                  ),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Center(
+                  child: Text(
+                    dayOffset.toString().convertNumbersToCurrentLang(),
+                    style: AppTextStyles.titleMedium().copyWith(
+                      fontSize: fontSize,
+                      height: 1.7,
+                      color: isCurrentDay
+                          ? Theme.of(context).colorScheme.primaryContainer
+                          : Theme.of(context).canvasColor,
+                      fontWeight: isCurrentDay
+                          ? FontWeight.bold
+                          : FontWeight.normal,
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+}

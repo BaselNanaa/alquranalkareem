@@ -1,0 +1,1427 @@
+{
+  "appName": "পবিত্র কোরআন - উইজডম লাইব্রেরি",
+  "@appName": {
+    "description": "appName",
+    "type": "text",
+    "placeholders": {}
+  },
+  "search_hint": "পবিত্র কুরআনের আয়াত অনুসন্ধান করুন",
+  "@search_hint": {
+    "description": "search_hint",
+    "type": "text",
+    "placeholders": {}
+  },
+  "menu": "ক্রমতালিকা",
+  "@menu": {
+    "description": "menu",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notes": "মন্তব্য",
+  "@notes": {
+    "description": "notes",
+    "type": "text",
+    "placeholders": {}
+  },
+  "note_title": "নোট উপাধি",
+  "@note_title": {
+    "description": "note_title",
+    "type": "text",
+    "placeholders": {}
+  },
+  "add_new_note": "একটি নতুন নোট যোগ করুন",
+  "@add_new_note": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "note_details": "নোট বিবরণ",
+  "@note_details": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmarks": "বুকমার্ক সংরক্ষিত",
+  "@bookmarks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmark_title": "বুকমার্ক নাম",
+  "@bookmark_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "add_new_bookmark": "একটি নতুন বুকমার্ক যোগ করুন",
+  "@add_new_bookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "save": "সংরক্ষণ",
+  "@save": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "edit": "সংশোধন",
+  "@edit": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "azkar": "দোয়া",
+  "@azkar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "qibla": "Qibla Direction",
+  "@qibla": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "salat": "Prayer Times",
+  "@salat": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aya_count": "আয়াত সংখ্যা",
+  "@aya_count": {
+    "description": "aya_count",
+    "type": "text",
+    "placeholders": {}
+  },
+  "quran_sorah": "সূরা",
+  "@quran_sorah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_us": "অ্যাপ সম্পর্কে",
+  "@about_us": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "stop_title": "পবিত্র কুরআনের এনডোমেন্ট - উইজডম লাইব্রেরি",
+  "@stop_title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_app": "হোলি কুরআন - আল-হিকমা লাইব্রেরি\" অ্যাপ্লিকেশনটি একটি সম্পূর্ণ অ্যাপ যা কুরআন পড়া এবং শেখার অভিজ্ঞতা উন্নত করার জন্য বিস্তৃত সুবিধার সম্ভার প্রদান করে। এই সুবিধাগুলি অন্তর্ভুক্ত:",
+  "@about_app": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_app2": "Among the most important features of the application :",
+  "@about_app2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "about_app3": "۞ আধুনিক ও ব্যবহারবান্ধব ইন্টারফেস: সমসাময়িক ও সহজাত নকশা যা সব ফিচারে নেভিগেশন ও প্রবেশকে সহজ করে, ক্যালেন্ডার দেখার জন্য নতুন ইন্টারফেস এবং পুরো বার্ষিক ক্যালেন্ডার একসাথে দেখার সুবিধাসহ।\n۞ কিং ফাহদ কমপ্লেক্স সংস্করণ গ্রহণ: অ্যাপটি মুশাফ মুদ্রণের জন্য কিং ফাহদ কমপ্লেক্স সংস্করণের উপর নির্ভর করে, যা নির্ভুলতা ও বিশ্বাসযোগ্যতার জন্য পরিচিত।\n۞ ইন্টারঅ্যাক্টিভ ও সমন্বিত পাঠ: মুশাফ (পৃষ্ঠা) মোড বা একক আয়াত মোডে নমনীয় পাঠের অভিজ্ঞতা, এবং লেখার সাথে পূর্ণাঙ্গ ইন্টারঅ্যাকশন।\n۞ উন্নত শ্রবণ: নির্বাচিত কারীদের কণ্ঠে আয়াত ও সূরা শোনার সুবিধা, প্লেব্যাকের সময় বর্তমান আয়াত প্রদর্শনের ফিচারসহ, এবং শেখা উন্নত করতে প্রতিটি শব্দ আলাদা করে শোনার সুযোগ।\n۞ দ্রুত অনুসন্ধান ও নেভিগেশন: কুরআনের আয়াতে তাত্ক্ষণিক অনুসন্ধান, কাঙ্ক্ষিত সূরা বা পৃষ্ঠায় সরাসরি যাওয়ার সুবিধা, এবং সূরাগুলোর মধ্যে মসৃণ নেভিগেশন।\n۞ তাফসির ও ইসলামি লাইব্রেরি: বিভিন্ন তাফসির ও অনুবাদের সংগ্রহে প্রবেশাধিকার, এবং হাদিস ও তাফসিরের বইসহ সমন্বিত ইসলামি লাইব্রেরি।\n۞ তাজবিদ ও তার বিধান: তাজবিদ ও তার বিধান পরিষ্কারভাবে প্রদর্শন, এবং তিলাওয়াতের পদ্ধতি বোঝা বাড়াতে দশ কিরআত যোগ করা।\n۞ উন্নত ভাষাগত বিশ্লেষণ: প্রতিটি শব্দের জন্য তাসরিফ ও ই'রাব প্রদর্শন, যা কুরআনের ভাষাগত অর্থ আরও গভীরভাবে বুঝতে সাহায্য করে।\n۞ সাদৃশ্যপূর্ণ আয়াত: হিফজ ও পুনরালোচনা সহজ করতে সাদৃশ্যপূর্ণ আয়াত প্রদর্শনের জন্য বিশেষ ফিচার।\n۞ পাঠ ও হিফজ ব্যবস্থাপনা: আয়াত ও পৃষ্ঠার জন্য বুকমার্ক যোগ করে যেকোনো সময় সহজে ফিরে যাওয়া।\n۞ ওয়াকফ চিহ্ন পড়া: সঠিকভাবে পড়তে সাহায্য করার জন্য ওয়াকফ চিহ্ন ব্যাখ্যা করা।\n۞ হিছনুল মুসলিমের আধকার: আধকার পড়ার জন্য পূর্ণাঙ্গ বিভাগ—প্রিয়তে যোগ করা এবং বিভাগগুলোর মধ্যে দ্রুত নেভিগেশনসহ।\n۞ প্রদর্শন কাস্টমাইজেশন: ডার্ক মোডসহ রঙের থিম পরিবর্তনের সমর্থন, আরামদায়ক পাঠের জন্য।\n۞ ডাউনলোড ও অফলাইন ব্যবহার: সূরা ডাউনলোড করে পরে ইন্টারনেট ছাড়াই শোনার সুবিধা।\n\nএই বৈশিষ্ট্যগুলো \"হোলি কুরআন - আল-হিকমা লাইব্রেরি\" অ্যাপকে একটি সমন্বিত প্ল্যাটফর্মে পরিণত করে যা পাঠ, শ্রবণ, তাফসির ও শেখাকে একত্র করে এবং সমৃদ্ধ ও সহজ-ব্যবহারযোগ্য আধ্যাত্মিক ও শিক্ষামূলক অভিজ্ঞতা প্রদান করে।",
+  "@about_app3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "email": "যোগাযোগ করুন",
+  "@email": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "select_player": "পাঠক নির্বাচিত",
+  "@select_player": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "delete": "মুছে ফেলা",
+  "@delete": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "page": "পৃষ্ঠা",
+  "@page": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search_word": "একটি আয়াত খুঁজুন",
+  "@search_word": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search_description": "আপনি নোবেল কোরানের সমস্ত আয়াত অনুসন্ধান করতে পারেন, শুধু আয়াত থেকে একটি শব্দ টাইপ করুন।.",
+  "@search_description": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fontSize": "ফন্টের মাপ পরিবর্তন করুন",
+  "@fontSize": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "waqfName": "থামো চিহ্ন",
+  "@waqfName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tajweedRules": "তাজবীদের নিয়ম",
+  "@tajweedRules": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardTitle1": "Easy interface",
+  "@onboardTitle1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardDesc1": "- Ease of searching for a verse.\n- Change the language.\n- Listen to the page.\n- Change the reader.",
+  "@onboardDesc1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardTitle2": "Show The Tafseer",
+  "@onboardTitle2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardDesc2": "The interpretation of each verse can be read by pulling the list up.",
+  "@onboardDesc2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardTitle3": "Click Options",
+  "@onboardTitle3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboardDesc3": "1- When you double click the page is enlarged.\n2- Upon long click you will be presented with the option to save the page.\n3- When you press once, the menus appear.",
+  "@onboardDesc3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "green": "সবুজ মোড",
+  "@green": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "brown": "বাদামী মোড",
+  "@brown": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dark": "অন্ধকার মোড",
+  "@dark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "azkarfav": "প্রিয় দোয়া",
+  "@azkarfav": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "themeTitle": "রুপ নির্বাচন করুন",
+  "@themeTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sorah": "সূরা",
+  "@sorah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "part": "অংশ",
+  "@part": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "langChange": "ভাষা পরিবর্তন করুন",
+  "@langChange": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafChange": "একটি তাফসির চয়ন করুন",
+  "@tafChange": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafIbnkatheerN": "তাফসির ইবনে কাসীর",
+  "@tafIbnkatheerN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafBaghawyN": "তাফসীর আল-বাগাভী",
+  "@tafBaghawyN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafQurtubiN": "তাফসির আল-কুরতুবী",
+  "@tafQurtubiN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafSaadiN": "তাফসির আস-সাদী",
+  "@tafSaadiN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafTabariN": "তাফসির আল-তাবারী",
+  "@tafTabariN": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafIbnkatheerD": "তাফসীর আল-কুরআন আল-আযীম",
+  "@tafIbnkatheerD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafBaghawyD": "মালিম আল-তানযিল",
+  "@tafBaghawyD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafQurtubiD": "আল-জামি লি আহকাম আল-কুরআন",
+  "@tafQurtubiD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafSaadiD": "তাইসির কালাম আলমান্নান",
+  "@tafSaadiD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafTabariD": "জামি আল-বায়ান আন তাবিল [আয়] আল কুরআন",
+  "@tafTabariD": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appLang": "অ্যাপের ভাষা",
+  "@appLang": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "setting": "বিন্যাস",
+  "@setting": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader1": "আব্দুল বাসিত",
+  "@reader1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader2": "মোহাম্মদ এল-মিনশাওয়ি",
+  "@reader2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader3": "মাহমুদ আল হুসারি",
+  "@reader3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader4": "আহমদ আল-আজামী",
+  "@reader4": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader5": "মাহের আল মুয়াইকলি",
+  "@reader5": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader6": "সাউদ আল-শুরাইম",
+  "@reader6": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader7": "সাদ আল-গামদি",
+  "@reader7": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader8": "মুস্তফা আল-আজাওয়ি",
+  "@reader8": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader9": "নাসের আল-কাতামি",
+  "@reader9": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader10": "কাদের আল-কুর্দি",
+  "@reader10": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader11": "শিরজাদ তাহের",
+  "@reader11": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader12": "আব্দুলরহমান আল-ওসি",
+  "@reader12": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader13": "ওয়াদিয়া আল-ইয়েমেনি",
+  "@reader13": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader14": "ইয়াসের আল-দোসারি",
+  "@reader14": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader15": "আবদুল্লাহ আল-জুহানি",
+  "@reader15": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader16": "ফারেস আব্বাদ",
+  "@reader16": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader17": "মোহাম্মদ আয়ুব",
+  "@reader17": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader18": "মাহের আল-মুয়াইকলি - মুজাওয়াদ",
+  "@reader18": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader19": "আহমাদ আল-নুফাইস - মুজাওয়াদ",
+  "@reader19": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader20": "ইয়াসির আল-দোসারি - মুজাওয়াদ",
+  "@reader20": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reader21": "আলি জাবের",
+  "@reader21": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "alheekmahlib": "আলহেকমাহ লাইব্রেরী",
+  "@alheekmahlib": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backTo": "Back To",
+  "@backTo": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "next": "পরবর্তী",
+  "@next": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "start": "শুরু করুন",
+  "@start": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quranPages": "আল কুরআন (পৃষ্ঠা)",
+  "@quranPages": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quranText": "আল কুরআন (আয়াহ)",
+  "@quranText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafsir": "আল তাফসীর",
+  "@tafsir": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "allJuz": "অংশগুলি",
+  "@allJuz": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copyAzkarText": "আজকার অনুলিপি করা হয়েছে",
+  "@copyAzkarText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addBookmark": "বুকমার্ক যোগ!",
+  "@addBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deletedBookmark": "বুকমার্ক মুছে ফেলা হয়েছে!",
+  "@deletedBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deletedReminder": "অনুস্মারক মুছে ফেলা হয়েছে!",
+  "@deletedReminder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fillAllFields": "ক্ষেত্র পূরণ করুন!",
+  "@fillAllFields": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "version": "সংস্করণ",
+  "@version": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "share": "অ্যাপটি শেয়ার করুন",
+  "@share": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "facebook": "ফেসবুকে আমাদের অনুসরণ করুন",
+  "@facebook": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addZekrBookmark": "Zekr প্রিয়তে যোগ করা হয়েছে",
+  "@addZekrBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deletedZekrBookmark": "Zekr ফেভারিট থেকে সরানো হয়েছে!",
+  "@deletedZekrBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pageNo": "পৃষ্ঠা সংখ্যা",
+  "@pageNo": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastRead": "শেষ পড়া",
+  "@lastRead": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copyAyah": "আয়াতটি অনুলিপি করা হয়েছে",
+  "@copyAyah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copyTafseer": "তাফসীরটি অনুলিপি করা হয়েছে",
+  "@copyTafseer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "online": "অনলাইন",
+  "@online": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "download": "ডাউনলোড",
+  "@download": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noInternet": "ডিভাইসটি ইন্টারনেটের সাথে সংযুক্ত নয়!",
+  "@noInternet": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mobileDataAyat": "দ্রষ্টব্য: আপনি আয়াত ডাউনলোড করতে সেলুলার ডেটা ব্যবহার করছেন!",
+  "@mobileDataAyat": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mobileDataSurahs": "দ্রষ্টব্য: আপনি সূরা ডাউনলোড করতে সেলুলার ডেটা ব্যবহার করছেন!",
+  "@mobileDataSurahs": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mobileDataListen": "দ্রষ্টব্য: আপনি সূরা শোনার জন্য সেলুলার ডেটা ব্যবহার করছেন!",
+  "@mobileDataListen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "choiceAyah": "অনুগ্রহ করে প্রথমে আয়াতটি বেছে নিন!",
+  "@choiceAyah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "stopSigns": "থামো চিহ্ন",
+  "@stopSigns": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutApp": "অ্যাপ সম্পর্কে",
+  "@aboutApp": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "readMore": "আরও পড়ুন",
+  "@readMore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "readLess": "কম পড়ুন",
+  "@readLess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ok": "ঠিক আছে",
+  "@ok": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel": "বাতিল করুন",
+  "@cancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchToSurah": "সূরা অনুসন্ধান করুন",
+  "@searchToSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addReminder": "নতুন অনুস্মারক যোগ করুন",
+  "@addReminder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastListen": "শেষ শুনুন",
+  "@lastListen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hizb": "হিযব",
+  "@hizb": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareText": "পাঠ্য হিসাবে",
+  "@shareText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareImage": "একটি ছবি হিসাবে",
+  "@shareImage": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareAudio": "অডিও হিসাবে",
+  "@shareAudio": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareImageWTrans": "অতিরিক্ত সামগ্রী সহ একটি চিত্র হিসাবে",
+  "@shareImageWTrans": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareTrans": "দ্রষ্টব্য: একটি ছবিতে ব্যাখ্যা শেয়ার করা শুধুমাত্র আল-সাদীর ব্যাখ্যাকে সমর্থন করে, কারণ ব্যাখ্যাটি দীর্ঘ নয়।.",
+  "@shareTrans": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "translation": "অনুবাদ",
+  "@translation": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search": "অনুসন্ধান করুন",
+  "@search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "surahsList": "সূরার তালিকা",
+  "@surahsList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmarksList": "বুকমার্ক তালিকা",
+  "@bookmarksList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copy": "কপি",
+  "@copy": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareTafseer": "শেয়ার করুন",
+  "@shareTafseer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addToBookmark": "বুকমার্ক যোগ করুন",
+  "@addToBookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "repeatSurah": "সূরা পুনরাবৃত্তি করুন",
+  "@repeatSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pauseSurah": "বিরতি সূরা",
+  "@pauseSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "replaySurah": "সূরা রিপ্লে করুন",
+  "@replaySurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "skipToPrevious": "এড়িয়ে যান পূর্ববর্তীতে",
+  "@skipToPrevious": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "deletedPlayList": "প্লেলিস্টটি মুছে ফেলা হয়েছে",
+  "@deletedPlayList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createPlayList": "প্লেলিস্ট তৈরি করুন",
+  "@createPlayList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "playList": "প্লেলিস্টগুলি",
+  "@playList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "playListName": "প্লেলিস্টের নাম টাইপ করুন",
+  "@playListName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "from": "থেকে",
+  "@from": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "to": "প্রতি",
+  "@to": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "surah": "সূরা",
+  "@surah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "chooseSurah": "সূরা নির্বাচন করুন",
+  "@chooseSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "segments": "অংশ",
+  "@segments": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addSegment": "অংশ যোগ করুন",
+  "@addSegment": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "repeatCount": "পুনরাবৃত্তি সংখ্যা",
+  "@repeatCount": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sleepTimer": "ঘুমের টাইমার",
+  "@sleepTimer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hour": "ঘণ্টা",
+  "@hour": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "minutes": "মিনিট",
+  "@minutes": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "of": "এর",
+  "@of": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quran": "পবিত্র কোরআন",
+  "@quran": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quranAudio": "অডিও মুসহাফ",
+  "@quranAudio": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "startScreen": "স্টার্ট স্ক্রিন",
+  "@startScreen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectScreen": "স্টার্ট স্ক্রিন নির্বাচন করুন",
+  "@selectScreen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyZeker": "দিনের দোয়া",
+  "@dailyZeker": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lang": "বাংলা",
+  "@lang": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "juz": "অংশ",
+  "@juz": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sajda": "সিজদা",
+  "@sajda": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pages": "পাতাগুলি",
+  "@pages": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ayahs": "আয়াতসমূহ",
+  "@ayahs": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "eidGreetingContent": "আল্লাহ আমাদের এবং আপনাদের থেকে রোজা, নামাজ এবং সৎকর্ম কবুল করুন।",
+  "@eidGreetingContent": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "eidGreetingContent2": "প্রতি বছর আপনারা আল্লাহর আরও নিকট হোন।",
+  "@eidGreetingContent2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "eidGreetingTitle": "ঈদ মোবারক",
+  "@eidGreetingTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ramadhanMubarak": "রমজান মোবারক",
+  "@ramadhanMubarak": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "home": "হোম",
+  "@home": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "skip": "এড়িয়ে যান",
+  "@skip": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "What's New": "নতুন কি আছে",
+  "@What's New": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "What'sNewTitle": "নতুন এবং ব্যবহারকারী-বান্ধব ইন্টারফেস:",
+  "@What'sNewTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ourApps": "আমাদের অ্যাপস",
+  "@ourApps": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "choseQuran": "পড়ার মোড নির্বাচন করুন",
+  "@choseQuran": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "blueMode": "নীল",
+  "@blueMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "brownMode": "বাদামী",
+  "@brownMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "oldMode": "পুরানো",
+  "@oldMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "darkMode": "গাঢ়",
+  "@darkMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sunday": "রবিবার",
+  "@Sunday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Monday": "সোমবার",
+  "@Monday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Tuesday": "মঙ্গলবার",
+  "@Tuesday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Wednesday": "বুধবার",
+  "@Wednesday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Thursday": "বৃহস্পতিবার",
+  "@Thursday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Friday": "শুক্রবার",
+  "@Friday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Saturday": "শনিবার",
+  "@Saturday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "RemainsUntilTheEndOf": "শেষ হতে বাকি",
+  "@RemainsUntilTheEndOf": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Muharram": "মুহাররাম",
+  "@Muharram": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Safar": "সফর",
+  "@Safar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Rabi' Al-Awwal": "রবিউল আউয়াল",
+  "@Rabi' Al-Awwal": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Rabi' Al-Thani": "রবিউস সানি",
+  "@Rabi' Al-Thani": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Jumada Al-Awwal": "জুমাদাল আউয়াল",
+  "@Jumada Al-Awwal": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Jumada Al-Thani": "জুমাদাস সানি",
+  "@Jumada Al-Thani": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Rajab": "রজব",
+  "@Rajab": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sha'aban": "শাবান",
+  "@Sha'aban": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Ramadan": "রমজান",
+  "@Ramadan": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Shawwal": "শাওয়াল",
+  "@Shawwal": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Dhu Al-Qi'dah": "জ্বিলকদ",
+  "@Dhu Al-Qi'dah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Dhu Al-Hijjah": "জ্বিলহজ্জ",
+  "@Dhu Al-Hijjah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Day": "দিন",
+  "@Day": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Days": "দিনগুলি",
+  "@Days": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hijriNote": "নোটিশ: অনুগ্রহ করে জেনে রাখুন যে হিজরি ক্যালেন্ডার চাঁদের সরাসরি দেখা নির্ভর করে বলে নির্দিষ্ট সময়গুলিতে সামান্য পার্থক্য হতে পারে। ঘোষিত তারিখগুলির সঠিকতা নিশ্চিত করতে আমরা সর্বোচ্চ প্রচেষ্টা চালিয়ে যাচ্ছি, চাঁদ দেখা গেলে ক্যালেন্ডারে সংশোধন করা হবে এটি মাথায় রেখে।",
+  "@hijriNote": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "AH": "AH",
+  "@AH": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Fajr": "ফজর",
+  "@Fajr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Dhuhr": "যোহর",
+  "@Dhuhr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Asr": "আসর",
+  "@Asr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Maghrib": "মাগরিব",
+  "@Maghrib": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Isha": "ইশা",
+  "@Isha": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Last Third": "রাতের শেষ তৃতীয়াংশ",
+  "@Last Third": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Middle of the Night": "মধ্যরাত",
+  "@Middle of the Night": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sunrise": "সূর্যোদয়",
+  "@Sunrise": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tafsirLibrary": "তাফসির লাইব্রেরি",
+  "@tafsirLibrary": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "allBooks": "সব বই",
+  "@allBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "myLibrary": "আমার লাইব্রেরি",
+  "@myLibrary": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmark": "বুকমার্কস",
+  "@bookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "chapterBook": "বইয়ের অধ্যায়সমূহ",
+  "@chapterBook": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutBook": "বই সম্পর্কে",
+  "@aboutBook": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "khatmah": "খাতমা",
+  "@khatmah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createKhatmah": "খাতমা তৈরি করুন",
+  "@createKhatmah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "khatmahName": "খাতমার নাম",
+  "@khatmahName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addKhatmah": "একটি খাতমা যোগ করুন",
+  "@addKhatmah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "duration": "সময়কাল",
+  "@duration": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "divisionBySahabah": "সাহাবীদের দ্বারা বিভাজন",
+  "@divisionBySahabah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "choiceColor": "রঙ নির্বাচন করুন",
+  "@choiceColor": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchInBooks": "বইয়ের মধ্যে অনুসন্ধান করুন",
+  "@searchInBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hasPassed": "অতিবাহিত হয়েছে",
+  "@hasPassed": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloading": "ডাউনলোড হচ্ছে...",
+  "@downloading": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "startHijriYear": "হিজরি বছরের শুরু",
+  "@startHijriYear": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderToFastTasoo'a": "তাসু'আর রোজা সম্পর্কে অনুস্মারক",
+  "@reminderToFastTasoo'a": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderToFastAshura": "আশুরার রোজা সম্পর্কে অনুস্মারক",
+  "@reminderToFastAshura": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ramadhan": "রমজান মাস",
+  "@ramadhan": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "nightOfQadir": "লাইলাতুল কদরের অনুস্মারক",
+  "@nightOfQadir": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "EidAl-Fitr": "ঈদ আল-ফিতর",
+  "@EidAl-Fitr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sexShawwal": "শাওয়ালের ছয় দিন রোজা সম্পর্কে অনুস্মারক",
+  "@sexShawwal": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "arafahReminder": "আরাফার দিনে রোজা সম্পর্কে অনুস্মারক",
+  "@arafahReminder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "tenDaysOfDhul-Hijjah": "জিলহজ্জের প্রথম দশ দিন",
+  "@tenDaysOfDhul-Hijjah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "EidAl-Adha": "ঈদ আল-আধা",
+  "@EidAl-Adha": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "choiceBackgroundColor": "পটভূমির রঙ নির্বাচন করুন",
+  "@choiceBackgroundColor": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reset": "পুনরায় সেট করুন",
+  "@reset": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Medinan": "মাদানি",
+  "@Medinan": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Meccan": "মাক্কি",
+  "@Meccan": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "surahNames": "সূরার নামগুলি",
+  "@surahNames": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutSurah": "সূরা সম্পর্কে",
+  "@aboutSurah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notification": "নোটিফিকেশনস",
+  "@notification": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noNotifications": "কোনো নোটিফিকেশন নেই",
+  "@noNotifications": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminders": "রিমাইন্ডারগুলি",
+  "@reminders": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "customReminder": "কাস্টম রিমাইন্ডার",
+  "@customReminder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addMore": "আরও যোগ করুন",
+  "@addMore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "What'sNewDetails10": "۞ কুরআনের পৃষ্ঠায় স্বয়ংক্রিয় স্ক্রল ফিচার যোগ করা হয়েছে, যাতে পৃষ্ঠাগুলোর মধ্যে হাতে করে যেতে না হয়ে আরামদায়কভাবে পড়তে পারেন।\n۞ ক্বারি আলি জাবের যোগ করা হয়েছে।",
+  "@What'sNewDetails10": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "chooseDhekr": "যিকির নির্বাচন করুন।",
+  "@chooseDhekr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectTime": "চিন্তা করার জন্য সময় নির্ধারণ করুন।",
+  "@selectTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadBookFirst": "অনুগ্রহ করে প্রথমে বইটি ডাউনলোড করুন।",
+  "@downloadBookFirst": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastDayOf": "মাসের শেষ দিন",
+  "@lastDayOf": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "booksDownloaded": "বইটি ডাউনলোড করা হয়েছে।",
+  "@booksDownloaded": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "booksDeleted": "বইটি মুছে ফেলা হয়েছে।",
+  "@booksDeleted": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noBooksDownloaded": "আপনি এখনো কোনো বই ডাউনলোড করেননি।",
+  "@noBooksDownloaded": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notifyQuranBody": "আপনি কোরআনের @currentPageNumber পৃষ্ঠায় থেমে গিয়েছেন, আপনি কি চালিয়ে যেতে চান?",
+  "@notifyQuranBody": {
+    "type": "text",
+    "placeholders": {
+      "currentPageNumber": {}
+    }
+  },
+  "notifyAdhkarBody": "আপনি @adhkarType পড়া ভুলবেন না",
+  "@notifyAdhkarBody": {
+    "type": "text",
+    "placeholders": {
+      "adhkarType": {}
+    }
+  },
+  "notifyBooksBody": "আপনি @bookName বই পড়া চালিয়ে যেতে ভুলবেন না",
+  "@notifyBooksBody": {
+    "type": "text",
+    "placeholders": {
+      "bookName": {}
+    }
+  },
+  "notifyListenBody": "আপনি সূরা শুনতে চালিয়ে যেতে ভুলবেন না",
+  "@notifyListenBody": {
+    "type": "text",
+    "placeholders": {
+      "bookName": {}
+    }
+  },
+  "lastSearch": "শেষ অনুসন্ধান",
+  "@lastSearch": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ashura": "আশুরা",
+  "@ashura": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "arafah": "আরাফাত দিবস",
+  "@arafah": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "editHijriDay": "হিজরি দিন সংশোধন",
+  "@editHijriDay": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "defaultFontText": "ডিফল্ট ফন্ট",
+  "@defaultFontText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadedFontsText": "কুরআন ফন্ট",
+  "@downloadedFontsText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fonts": "ফন্টসমূহ",
+  "@fonts": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fontsNotes": "একটি ভালো অভিজ্ঞতা এবং কুরআনের আদর্শ চেহারার জন্য, অনুগ্রহ করে এর জন্য ফন্ট ডাউনলোড করুন।",
+  "@fontsNotes": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "calenderSettings": "ক্যালেন্ডার সেটিংস",
+  "@calenderSettings": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "islamicCalendar": "ইসলামিক ক্যালেন্ডার",
+  "hijriCalendar": "হিজরি ক্যালেন্ডার",
+  "calendar": "ক্যালেন্ডার",
+  "events": "ইভেন্টগুলি",
+  "year": "বছর",
+  "month": "মাস",
+  "hijri": "হিজরি",
+  "Sun": "রবি",
+  "@Sun": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Mon": "সোম",
+  "@Mon": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Tue": "মঙ্গল",
+  "@Tue": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Wed": "বুধ",
+  "@Wed": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Thu": "বৃহস্পতি",
+  "@Thu": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Fri": "শুক্র",
+  "@Fri": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sat": "শনি",
+  "@Sat": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "manager_ayah_downloads": "আয়াত ডাউনলোড পরিচালনা",
+  "load_error": "এই শব্দটির তথ্য লোড করা যায়নি।",
+  "no_data": "এই শব্দটির জন্য কোনো তথ্য নেই।",
+  "recitations": "কিরাআত",
+  "tasreef": "তাসরীফ",
+  "eerab": "ই'রাব",
+  "unavailableDataTemplate": "@kind এর তথ্য এই ডিভাইসে ডাউনলোড করা নেই",
+  "@unavailableDataTemplate": {
+    "type": "text",
+    "placeholders": {
+      "kind": {}
+    }
+  },
+  "mushafOrthographicMarks": "মুসহাফের হারাকাত",
+  "bookRemovedFromLastRead": "শেষ পঠিত থেকে বইটি সরানো হয়েছে",
+  "hadiths": "হাদিস",
+  "sixthBooks": "ছয়টি বই",
+  "ninthBooks": "নয়টি বই",
+  "noHadithBooks": "এই ডিভাইসে কোনো হাদিসের বই ডাউনলোড করা নেই।",
+  "noTafsirBooks": "এই ডিভাইসে কোনো তাফসিরের বই ডাউনলোড করা নেই।",
+  "noBooks": "কোনো বই নেই।",
+  "bookJuz": "বইয়ের অংশসমূহ",
+  "downloadBookFirstToSeeTheContents": "বিষয়বস্তু দেখতে প্রথমে বইটি ডাউনলোড করুন",
+  "chapter": "অধ্যায়",
+  "goToStartOfJuz": "অংশের শুরুতে যান",
+  "noBooksReadedYet": "আপনি এখনও কোনো বই পড়েননি।",
+  "noBooksFoundForSearch": "অনুসন্ধানের জন্য কোনো বই পাওয়া যায়নি।",
+  "islamicLibrary": "ইসলামিক লাইব্রেরি",
+  "tajweed": "তাজবিদসহ",
+  "useEnglishNumbers": "ইংরেজি সংখ্যা ব্যবহার করুন",
+  "changeTafsir": "তাফসির পরিবর্তন করুন",
+  "mutashabihat": "সদৃশ আয়াতসমূহ",
+  "no_mutashabihat": "এই আয়াতের জন্য কোনো সদৃশ বাক্যাংশ নেই",
+  "browse_mutashabihat": "সদৃশ আয়াতসমূহ দেখুন",
+  "mutashabihat_in": "এ সদৃশ আয়াতসমূহ",
+  "repeated": "পুনরাবৃত্তি",
+  "times": "বার",
+  "surahs": "সূরা",
+  "ayah": "আয়াত",
+  "tajweedUnavailableText": "তাজবিদের নিয়মের ডেটা ডাউনলোড করা হয়নি।",
+  "tajweedSurahNumberErrorText": "সুরার নম্বর নির্ধারণ করা যায়নি",
+  "tajweedLoadErrorText": "তাজবিদের নিয়মের ডেটা লোড করা যায়নি",
+  "tajweedNoDataText": "এই আয়াতের জন্য তাজবিদের কোনো ডেটা নেই।",
+  "twoDays": "দুই দিন",
+  "searchInBook": "বইয়ের মধ্যে খুঁজুন",
+  "autoScrollSettings": "স্বয়ংক্রিয় স্ক্রল সেটিংস",
+  "stopCondition": "এখানে থামুন:",
+  "pageCount": "পৃষ্ঠা সংখ্যা:",
+  "speed": "গতি:",
+  "slow": "ধীর",
+  "fast": "দ্রুত",
+  "nextHizb": "পরবর্তী হিজব",
+  "nextJuz": "পরবর্তী জুজ",
+  "manual": "ম্যানুয়াল"
+}

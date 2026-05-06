@@ -1,0 +1,313 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+import 'app_text_styles.dart';
+
+final ThemeData blueTheme = ThemeData.light(useMaterial3: true).copyWith(
+  appBarTheme: const AppBarTheme(
+    systemOverlayStyle: SystemUiOverlayStyle.light,
+  ),
+  colorScheme: const ColorScheme(
+    brightness: Brightness.light,
+    primary: Color(0xff404C6E),
+    onPrimary: Color(0xff404C6E),
+    secondary: Color(0xffffffff),
+    onSecondary: Color(0xffbc8a5f),
+    error: Color(0xffE0E1E0),
+    onError: Color(0xffE0E1E0),
+    surface: Color(0xffbc8a5f),
+    onSurface: Color(0xffE0E1E0),
+    inversePrimary: Color(0xff000000),
+    inverseSurface: Color(0xffBC6C25),
+    primaryContainer: Color(0xffFFFFFF),
+    onPrimaryContainer: Color(0xffFEFAE0),
+    onInverseSurface: Color(0xff000000),
+    surfaceContainer: Color(0xfffaf7f3),
+  ),
+  primaryColor: const Color(0xff404C6E),
+  primaryColorLight: const Color(0xff404C6E),
+  primaryColorDark: const Color(0xff404C6E),
+  dividerColor: const Color(0xffbc8a5f),
+  highlightColor: const Color(0xffbc8a5f).withValues(alpha: 0.25),
+  scaffoldBackgroundColor: const Color(0xff404C6E),
+  canvasColor: const Color(0xffFFFFFF),
+  hoverColor: const Color(0xffFFFFFF).withValues(alpha: 0.3),
+  disabledColor: const Color(0Xff000000),
+  hintColor: const Color(0xff404C6E),
+  focusColor: const Color(0xffE0E1E0),
+  secondaryHeaderColor: const Color(0xffbc8a5f),
+  cardColor: const Color(0xff404C6E),
+  dividerTheme: const DividerThemeData(color: Color(0xffbc8a5f)),
+  textSelectionTheme: TextSelectionThemeData(
+    selectionColor: const Color(0xffE0E1E0).withValues(alpha: 0.3),
+    selectionHandleColor: const Color(0xffE0E1E0),
+  ),
+  cupertinoOverrideTheme: const CupertinoThemeData(
+    primaryColor: Color(0xff53618c),
+  ),
+  timePickerTheme: TimePickerThemeData(
+    backgroundColor: const Color(0xffbc8a5f),
+    dialBackgroundColor: const Color(0xffFFFFFF),
+    dialHandColor: const Color(0xffbc8a5f),
+    dialTextColor: const Color(0xff000000).withValues(alpha: .6),
+    entryModeIconColor: const Color(0xff000000).withValues(alpha: .6),
+    hourMinuteTextColor: const Color(0xff000000).withValues(alpha: .6),
+    dayPeriodTextColor: const Color(0xff000000).withValues(alpha: .6),
+    dayPeriodTextStyle: AppTextStyles.titleMedium(),
+    dialTextStyle: AppTextStyles.titleMedium(),
+    helpTextStyle: AppTextStyles.titleMedium(color: const Color(0xffFEFAE0)),
+    hourMinuteTextStyle: AppTextStyles.titleLarge(),
+    cancelButtonStyle: ButtonStyle(
+      backgroundColor: WidgetStateProperty.all(
+        const Color(0xff000000).withValues(alpha: .6),
+      ),
+      foregroundColor: WidgetStateProperty.all(const Color(0xffFFFFFF)),
+      shape: WidgetStateProperty.all(
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+      ),
+      textStyle: WidgetStateProperty.all(AppTextStyles.titleMedium()),
+    ),
+    confirmButtonStyle: ButtonStyle(
+      backgroundColor: WidgetStateProperty.all(
+        const Color(0xff000000).withValues(alpha: .8),
+      ),
+      foregroundColor: WidgetStateProperty.all(const Color(0xffFFFFFF)),
+      shape: WidgetStateProperty.all(
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+      ),
+      textStyle: WidgetStateProperty.all(AppTextStyles.titleMedium()),
+    ),
+  ),
+);
+
+final ThemeData brownTheme = ThemeData(
+  useMaterial3: true,
+  appBarTheme: const AppBarTheme(
+    systemOverlayStyle: SystemUiOverlayStyle.light,
+  ),
+  colorScheme: const ColorScheme(
+    brightness: Brightness.light,
+    primary: Color(0xff583101),
+    onPrimary: Color(0xff583101),
+    secondary: Color(0xffffffff),
+    onSecondary: Color(0xff854621),
+    error: Color(0xffa47148),
+    onError: Color(0xffa47148),
+    surface: Color(0xffa47148),
+    onSurface: Color(0xffa47148),
+    inversePrimary: Color(0xff000000),
+    inverseSurface: Color(0xffa47148),
+    primaryContainer: Color(0xffFDF7F4),
+    onPrimaryContainer: Color(0xffFDF7F4),
+    onInverseSurface: Color(0xff000000),
+    surfaceContainer: Color(0xffFDF7F4),
+  ),
+  primaryColor: const Color(0xff583101),
+  primaryColorLight: const Color(0xff603808),
+  primaryColorDark: const Color(0xff583101),
+  dividerColor: const Color(0xff854621),
+  highlightColor: const Color(0xffa47148).withValues(alpha: 0.25),
+  scaffoldBackgroundColor: const Color(0xff583101),
+  canvasColor: const Color(0xffF2E5D5),
+  hoverColor: const Color(0xffF2E5D5).withValues(alpha: 0.3),
+  disabledColor: const Color(0xff000000),
+  hintColor: const Color(0xff000000),
+  focusColor: const Color(0xff583101),
+  secondaryHeaderColor: const Color(0xff583101),
+  cardColor: const Color(0xff583101),
+  textSelectionTheme: TextSelectionThemeData(
+    selectionColor: const Color(0xffa47148).withValues(alpha: 0.3),
+    selectionHandleColor: const Color(0xffa47148),
+  ),
+  cupertinoOverrideTheme: const CupertinoThemeData(
+    primaryColor: Color(0xffa47148),
+  ),
+  timePickerTheme: TimePickerThemeData(
+    backgroundColor: const Color(0xffa47148),
+    dialBackgroundColor: const Color(0xffFDF7F4),
+    dialHandColor: const Color(0xffa47148),
+    dialTextColor: const Color(0xff000000).withValues(alpha: .6),
+    entryModeIconColor: const Color(0xff000000).withValues(alpha: .6),
+    hourMinuteTextColor: const Color(0xff000000).withValues(alpha: .6),
+    dayPeriodTextColor: const Color(0xff000000).withValues(alpha: .6),
+    dayPeriodTextStyle: AppTextStyles.titleMedium(),
+    dialTextStyle: AppTextStyles.titleMedium(),
+    helpTextStyle: AppTextStyles.titleMedium(color: const Color(0xffFEFAE0)),
+    hourMinuteTextStyle: AppTextStyles.titleLarge(),
+    cancelButtonStyle: ButtonStyle(
+      backgroundColor: WidgetStateProperty.all(
+        const Color(0xff000000).withValues(alpha: .6),
+      ),
+      foregroundColor: WidgetStateProperty.all(const Color(0xffFDF7F4)),
+      shape: WidgetStateProperty.all(
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+      ),
+      textStyle: WidgetStateProperty.all(AppTextStyles.titleMedium()),
+    ),
+    confirmButtonStyle: ButtonStyle(
+      backgroundColor: WidgetStateProperty.all(
+        const Color(0xff000000).withValues(alpha: .8),
+      ),
+      foregroundColor: WidgetStateProperty.all(const Color(0xffFDF7F4)),
+      shape: WidgetStateProperty.all(
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+      ),
+      textStyle: WidgetStateProperty.all(AppTextStyles.titleMedium()),
+    ),
+  ),
+);
+
+final ThemeData greenTheme = ThemeData.light(useMaterial3: true).copyWith(
+  appBarTheme: const AppBarTheme(
+    systemOverlayStyle: SystemUiOverlayStyle.light,
+  ),
+  colorScheme: const ColorScheme(
+    brightness: Brightness.light,
+    primary: Color(0xff283618),
+    onPrimary: Color(0xff606C38),
+    secondary: Color(0xffFEFAE0),
+    onSecondary: Color(0xffDDA15E),
+    error: Color(0xffE0E1E0),
+    onError: Color(0xffE0E1E0),
+    surface: Color(0xffDDA15E),
+    onSurface: Color(0xffE0E1E0),
+    inversePrimary: Color(0xff000000),
+    inverseSurface: Color(0xffBC6C25),
+    primaryContainer: Color(0xffFEFAE0),
+    onPrimaryContainer: Color(0xffFEFAE0),
+    onInverseSurface: Color(0xff000000),
+    surfaceContainer: Color(0xffFEFAE0),
+  ),
+  primaryColor: const Color(0xff283618),
+  primaryColorLight: const Color(0xff606C38),
+  primaryColorDark: const Color(0xffDDA15E),
+  dividerColor: const Color(0xffDDA15E),
+  highlightColor: const Color(0xffDDA15E).withValues(alpha: 0.25),
+  scaffoldBackgroundColor: const Color(0xff283618),
+  canvasColor: const Color(0xffFEFAE0),
+  hoverColor: const Color(0xffFEFAE0).withValues(alpha: 0.3),
+  disabledColor: const Color(0xff000000),
+  hintColor: const Color(0xff283618),
+  focusColor: const Color(0xffE0E1E0),
+  secondaryHeaderColor: const Color(0xff53618c),
+  cardColor: const Color(0xff283618),
+  dividerTheme: const DividerThemeData(color: Color(0xffDDA15E)),
+  textSelectionTheme: TextSelectionThemeData(
+    selectionColor: const Color(0xffE0E1E0).withValues(alpha: 0.3),
+    selectionHandleColor: const Color(0xffE0E1E0),
+  ),
+  cupertinoOverrideTheme: const CupertinoThemeData(
+    primaryColor: Color(0xff53618c),
+  ),
+  timePickerTheme: TimePickerThemeData(
+    backgroundColor: const Color(0xff606C38),
+    dialBackgroundColor: const Color(0xffFEFAE0),
+    dialHandColor: const Color(0xff606C38),
+    dialTextColor: const Color(0xff000000).withValues(alpha: .6),
+    entryModeIconColor: const Color(0xff000000).withValues(alpha: .6),
+    hourMinuteTextColor: const Color(0xff000000).withValues(alpha: .6),
+    dayPeriodTextColor: const Color(0xff000000).withValues(alpha: .6),
+    dayPeriodTextStyle: AppTextStyles.titleMedium(),
+    dialTextStyle: AppTextStyles.titleMedium(),
+    helpTextStyle: AppTextStyles.titleMedium(color: const Color(0xffFEFAE0)),
+    hourMinuteTextStyle: AppTextStyles.titleLarge(),
+    cancelButtonStyle: ButtonStyle(
+      backgroundColor: WidgetStateProperty.all(
+        const Color(0xff000000).withValues(alpha: .6),
+      ),
+      foregroundColor: WidgetStateProperty.all(const Color(0xffFEFAE0)),
+      shape: WidgetStateProperty.all(
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+      ),
+      textStyle: WidgetStateProperty.all(AppTextStyles.titleMedium()),
+    ),
+    confirmButtonStyle: ButtonStyle(
+      backgroundColor: WidgetStateProperty.all(
+        const Color(0xff000000).withValues(alpha: .8),
+      ),
+      foregroundColor: WidgetStateProperty.all(const Color(0xffFEFAE0)),
+      shape: WidgetStateProperty.all(
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+      ),
+      textStyle: WidgetStateProperty.all(AppTextStyles.titleMedium()),
+    ),
+  ),
+);
+
+final ThemeData darkTheme = ThemeData.dark(useMaterial3: true).copyWith(
+  appBarTheme: const AppBarTheme(
+    systemOverlayStyle: SystemUiOverlayStyle.light,
+  ),
+  colorScheme: const ColorScheme(
+    brightness: Brightness.dark,
+    primary: Color(0xff283618),
+    onPrimary: Color(0xff000000),
+    secondary: Color(0xffffffff),
+    onSecondary: Color(0xffDDA15E),
+    error: Color(0xff606C38),
+    onError: Color(0xff606C38),
+    surface: Color(0xffbc8a5f),
+    onSurface: Color(0xff606C38),
+    inversePrimary: Color(0xffffffff),
+    inverseSurface: Color(0xffBC6C25),
+    primaryContainer: Color(0xff1E1E1E),
+    onPrimaryContainer: Color(0xff1E1E1E),
+    onInverseSurface: Color(0xff000000),
+    surfaceContainer: Color(0xff1E1E1E),
+  ),
+  primaryColor: const Color(0xff1E1E1E),
+  primaryColorLight: const Color(0xff606C38),
+  primaryColorDark: const Color(0xff010101),
+  dividerColor: const Color(0xff606C38),
+  highlightColor: const Color(0xff606C38).withValues(alpha: 0.25),
+  scaffoldBackgroundColor: const Color(0xff000000),
+  canvasColor: const Color(0xffF6F6EE),
+  hoverColor: const Color(0xffF6F6EE).withValues(alpha: 0.3),
+  disabledColor: const Color(0xff000000),
+  hintColor: const Color(0xffffffff),
+  focusColor: const Color(0xff606C38),
+  secondaryHeaderColor: const Color(0xff606C38),
+  cardColor: const Color(0xffF6F6EE),
+  textSelectionTheme: TextSelectionThemeData(
+    selectionColor: const Color(0xff606C38).withValues(alpha: 0.3),
+    selectionHandleColor: const Color(0xff606C38),
+  ),
+  cupertinoOverrideTheme: const CupertinoThemeData(
+    primaryColor: Color(0xff606C38),
+  ),
+  timePickerTheme: TimePickerThemeData(
+    backgroundColor: const Color(0xffbc8a5f),
+    dialBackgroundColor: const Color(0xff1E1E1E),
+    dialHandColor: const Color(0xffbc8a5f),
+    dialTextColor: const Color(0xffF6F6EE).withValues(alpha: .6),
+    entryModeIconColor: const Color(0xffF6F6EE).withValues(alpha: .6),
+    hourMinuteTextColor: const Color(0xffF6F6EE).withValues(alpha: .6),
+    dayPeriodTextColor: const Color(0xffF6F6EE).withValues(alpha: .6),
+    dayPeriodColor: const Color(0xff1E1E1E),
+    dayPeriodTextStyle: AppTextStyles.titleMedium(),
+    dialTextStyle: AppTextStyles.titleMedium(),
+    helpTextStyle: AppTextStyles.titleMedium(color: const Color(0xffFEFAE0)),
+    hourMinuteTextStyle: AppTextStyles.titleLarge(),
+    cancelButtonStyle: ButtonStyle(
+      backgroundColor: WidgetStateProperty.all(
+        const Color(0xffF6F6EE).withValues(alpha: .6),
+      ),
+      foregroundColor: WidgetStateProperty.all(const Color(0xff1E1E1E)),
+      shape: WidgetStateProperty.all(
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+      ),
+      textStyle: WidgetStateProperty.all(AppTextStyles.titleMedium()),
+    ),
+    confirmButtonStyle: ButtonStyle(
+      backgroundColor: WidgetStateProperty.all(
+        const Color(0xffF6F6EE).withValues(alpha: .8),
+      ),
+      foregroundColor: WidgetStateProperty.all(const Color(0xff1E1E1E)),
+      shape: WidgetStateProperty.all(
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+      ),
+      textStyle: WidgetStateProperty.all(AppTextStyles.titleMedium()),
+    ),
+  ),
+);

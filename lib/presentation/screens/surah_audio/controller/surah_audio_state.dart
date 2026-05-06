@@ -1,0 +1,44 @@
+part of '../surah_audio.dart';
+
+class SurahAudioState {
+  // Singleton pattern
+  static final SurahAudioState _instance = SurahAudioState._internal();
+  factory SurahAudioState() => _instance;
+  SurahAudioState._internal();
+
+  /// -------- [Variables] ----------
+  ArabicNumbers arabicNumber = ArabicNumbers();
+
+  TextEditingController srchTxtCntroler = TextEditingController();
+  late ItemScrollController surahsScrollController = ItemScrollController();
+  // final SlidingPanelController boxController = SlidingPanelController();
+  final box = GetStorage();
+
+  // للتحكم في عرض الصفحة بنجاح بعد تحميل التطبيق
+  // For controlling successful page display after app loading
+  RxBool surahReadersLoaded = false.obs;
+  RxBool isPlayExpanded = false.obs;
+
+  TextEditingController textController = TextEditingController();
+
+  // -------- [Segment Tracking] ----------
+
+  /// رقم الآية الحالية المحدّدة من segments
+  Rx<int?> currentSegmentAyahNumber = Rx<int?>(null);
+
+  /// رقم الكلمة الحالية المحدّدة من segments
+  Rx<int?> currentSegmentWordIndex = Rx<int?>(null);
+
+  /// رقم السورة الحالية المحدّدة من segments
+  Rx<int?> currentSegmentSurahNumber = Rx<int?>(null);
+
+  /// حالة تحميل ملف segments
+  RxBool isSegmentsLoading = false.obs;
+
+  /// هل القارئ الحالي يدعم segments
+  RxBool isSegmentsAvailable = false.obs;
+
+  /// اشتراك تتبع الموضع للـ segments
+  StreamSubscription<Duration>? segmentPositionSubscription;
+  final tabBarController = FlexibleSheetController();
+}
