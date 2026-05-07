@@ -29,6 +29,7 @@ class QuranState {
   RxInt selectMushafSettingsPage = 0.obs;
   RxDouble ayahsWidgetHeight = 0.0.obs;
   RxInt currentListPage = 1.obs;
+  RxInt currentPage = 582.obs;
   final box = GetStorage();
   int? lastDisplayedHizbQuarter;
   Map<int, int> pageToHizbQuarterMap = {};

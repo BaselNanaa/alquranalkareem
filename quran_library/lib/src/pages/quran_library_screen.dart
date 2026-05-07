@@ -1,5 +1,22 @@
 part of '/quran.dart';
 
+/// Prevents scrolling before Juz 30 start (page 582 = index 581).
+class _Juz30BoundedScrollPhysics extends ClampingScrollPhysics {
+  const _Juz30BoundedScrollPhysics({super.parent});
+
+  @override
+  _Juz30BoundedScrollPhysics applyTo(ScrollPhysics? ancestor) {
+    return _Juz30BoundedScrollPhysics(parent: buildParent(ancestor));
+  }
+
+  @override
+  double applyBoundaryConditions(ScrollMetrics position, double value) {
+    final double minExtent = 581.0 * position.viewportDimension;
+    if (value < minExtent) return value - minExtent;
+    return super.applyBoundaryConditions(position, value);
+  }
+}
+
 /// A widget that displays the Quran library screen.
 ///
 /// This screen is used to display the Quran library, which includes
@@ -705,7 +722,7 @@ class QuranLibraryScreen extends StatelessWidget {
           controller: quranCtrl.getPageController(context),
           physics: quranCtrl.state.isScaling.value
               ? const NeverScrollableScrollPhysics()
-              : const ClampingScrollPhysics(),
+              : const _Juz30BoundedScrollPhysics(),
           onPageChanged: (idx) => _onPageChange(context, idx, quranCtrl),
           pageSnapping: true,
           itemBuilder: (ctx, index) => _ItemBuilderWidget(

@@ -77,7 +77,7 @@ class DualPageView extends StatelessWidget {
           controller: _getDualPageController(context),
           physics: quranCtrl.state.isScaling.value
               ? const NeverScrollableScrollPhysics()
-              : const ClampingScrollPhysics(),
+              : const _Juz30BoundedScrollPhysics(),
           onPageChanged: (pageIndex) {
             WidgetsBinding.instance.addPostFrameCallback((_) {
               if (!context.mounted) return;

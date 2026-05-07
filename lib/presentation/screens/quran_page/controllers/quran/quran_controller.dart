@@ -10,6 +10,8 @@ class QuranController extends GetxController {
   void onInit() async {
     super.onInit();
     loadQuran();
+    final savedPage = (state.box.read(MSTART_PAGE) ?? 582) as int;
+    state.currentPage.value = savedPage < 582 ? 582 : savedPage;
     state.backgroundPickerColor.value =
         state.box.read(BACKGROUND_PICKER_COLOR) ?? 0xfffaf7f3;
 

@@ -7,11 +7,19 @@ class _IndexTab extends StatelessWidget {
   const _IndexTab(
       {required this.isDark, required this.languageCode, required this.style});
 
+  // Returns the 0-based index of the first available juz in the allJoz list
+  static int _availableJuzOffset() {
+    final ayahs = QuranCtrl.instance.state.allAyahs;
+    if (ayahs.isEmpty) return 0;
+    final minJuz = ayahs.map((a) => a.juz).reduce((a, b) => a < b ? a : b);
+    return minJuz - 1;
+  }
+
   @override
   Widget build(BuildContext context) {
     final jozzList = QuranLibrary.allJoz;
     final hizbList = QuranLibrary.allHizb;
-    final surahs = QuranLibrary.getAllSurahs(isArabic: false);
+    final surahModels = QuranCtrl.instance.surahsList;
 
     final Color textColor = style.textColor ?? AppColors.getTextColor(isDark);
     final Color accentColor =
@@ -61,13 +69,14 @@ class _IndexTab extends StatelessWidget {
                 _SurahsList(
                     isDark: isDark,
                     languageCode: languageCode,
-                    surahs: surahs,
+                    surahModels: surahModels,
                     style: style),
                 _JozzList(
                     isDark: isDark,
                     jozzList: jozzList,
                     hizbList: hizbList,
-                    style: style),
+                    style: style,
+                    juzOffset: _availableJuzOffset()),
               ],
             ),
           )
@@ -80,29 +89,28 @@ class _IndexTab extends StatelessWidget {
 class _SurahsList extends StatelessWidget {
   final bool isDark;
   final String languageCode;
-  final List<String> surahs;
+  final List<SurahNamesModel> surahModels;
   final IndexTabStyle style;
   const _SurahsList(
       {required this.isDark,
       required this.languageCode,
-      required this.surahs,
+      required this.surahModels,
       required this.style});
 
   @override
   Widget build(BuildContext context) {
-    // احسب السورة الحالية من الكنترولر
     int? currentIndex;
     try {
       final ctrl = QuranCtrl.instance;
       final currentPage = ctrl.state.currentPageNumber.value;
       final surahNumber =
           ctrl.getCurrentSurahByPageNumber(currentPage).surahNumber;
-      currentIndex = (surahNumber - 1).clamp(0, surahs.length - 1);
+      currentIndex = surahModels.indexWhere((s) => s.number == surahNumber);
+      if (currentIndex == -1) currentIndex = null;
     } catch (_) {}
 
-    // استخدم ScrollController للتمرير بالاعتماد على ارتفاع تقريبي للعنصر
     final scrollCtrl = ScrollController();
-    const double itemHeight = 68.0; // ارتفاع تقديري لكل صف
+    const double itemHeight = 68.0;
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (currentIndex != null && scrollCtrl.hasClients) {
         final max = scrollCtrl.position.maxScrollExtent;
@@ -117,15 +125,16 @@ class _SurahsList extends StatelessWidget {
         style.accentColor ?? Theme.of(context).colorScheme.primary;
     return ListView.builder(
       controller: scrollCtrl,
-      itemCount: surahs.length,
+      itemCount: surahModels.length,
       itemBuilder: (context, index) {
+        final surah = surahModels[index];
         final bool isCurrent = (currentIndex == index);
         return Material(
           color: Colors.transparent,
           child: InkWell(
             onTap: () {
               Navigator.pop(context);
-              QuranLibrary().jumpToSurah(index + 1);
+              QuranLibrary().jumpToSurah(surah.number);
             },
             child: Container(
               padding:
@@ -158,7 +167,7 @@ class _SurahsList extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        '${index + 1}'.convertNumbersAccordingToLang(
+                        '${surah.number}'.convertNumbersAccordingToLang(
                             languageCode: languageCode),
                         style: QuranLibrary()
                             .cairoStyle
@@ -170,7 +179,7 @@ class _SurahsList extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
-                        ' surah${(index + 1).toString().padLeft(3, '0')} ',
+                        ' surah${surah.number.toString().padLeft(3, '0')} ',
                         style: TextStyle(
                           color: textColor,
                           fontFamily: "surah-name-v4",
@@ -178,18 +187,8 @@ class _SurahsList extends StatelessWidget {
                           package: "quran_library",
                         ),
                       ),
-                      // Text(
-                      //   (index + 1).toString(),
-                      //   style: TextStyle(
-                      //     color: textColor,
-                      //     fontFamily: "surahName",
-                      //     fontSize: 32,
-                      //     package: "quran_library",
-                      //   ),
-                      //   textAlign: TextAlign.center,
-                      // ),
                       Text(
-                        surahs[index],
+                        surah.englishName,
                         style: QuranLibrary().cairoStyle.copyWith(
                             fontSize: 14, color: textColor, height: 1.2),
                       ),
@@ -210,11 +209,13 @@ class _JozzList extends StatelessWidget {
   final List<String> jozzList;
   final List<String> hizbList;
   final IndexTabStyle style;
+  final int juzOffset;
   const _JozzList(
       {required this.isDark,
       required this.jozzList,
       required this.hizbList,
-      required this.style});
+      required this.style,
+      this.juzOffset = 0});
 
   @override
   Widget build(BuildContext context) {
@@ -280,8 +281,8 @@ class _JozzList extends StatelessWidget {
                 ),
           ),
           children: List.generate(2, (index) {
-            final hizbIndex =
-                (index == 0 && jozzIndex == 0) ? 0 : ((jozzIndex * 2 + index));
+            final actualJuzIndex = juzOffset + jozzIndex;
+            final hizbIndex = actualJuzIndex * 2 + index;
             return Material(
               color: Colors.transparent,
               child: InkWell(

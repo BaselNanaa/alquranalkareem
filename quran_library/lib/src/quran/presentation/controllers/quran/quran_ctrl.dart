@@ -42,7 +42,7 @@ class QuranCtrl extends GetxController {
   RxList<QuranPageModel> staticPages = <QuranPageModel>[].obs;
   List<SurahModel> surahs = [];
   final List<AyahModel> ayahs = [];
-  int lastPage = 1;
+  int lastPage = 582;
   int? initialPage;
   final RxList<AyahModel> searchResultAyahs = <AyahModel>[].obs;
   final RxList<SurahModel> searchResultSurahs = <SurahModel>[].obs;
@@ -95,7 +95,7 @@ class QuranCtrl extends GetxController {
   @override
   void onInit() async {
     super.onInit();
-    state.currentPageNumber.value = _quranRepository.getLastPage() ?? 1;
+    state.currentPageNumber.value = _quranRepository.getLastPage() ?? 582;
     junpTolastPage();
 
     // QuranFontsService.ensurePagesLoaded(state.currentPageNumber.value,
@@ -182,7 +182,7 @@ class QuranCtrl extends GetxController {
   // }
 
   Future<void> loadQuranDataV3() async {
-    lastPage = _quranRepository.getLastPage() ?? 1;
+    lastPage = _quranRepository.getLastPage() ?? 582;
     state.currentPageNumber.value = lastPage;
     if (lastPage != 0) {
       jumpToPage(lastPage - 1);
@@ -681,7 +681,7 @@ class QuranCtrl extends GetxController {
             (p != null) ? p.round() : state.currentPageNumber.value - 1;
       } else {
         // قراءة مباشرة من التخزين — المصدر الأوثق للصفحة المحفوظة
-        final savedPage = _quranRepository.getLastPage() ?? 1;
+        final savedPage = _quranRepository.getLastPage() ?? 582;
         currentIndex = savedPage - 1;
       }
       currentIndex = currentIndex.clamp(0, 603);

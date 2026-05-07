@@ -271,26 +271,31 @@ class QuranLibrary {
   /// [jumpToSurah] let's you navigate to any quran surah with surah number
   /// Note it receives surah number not surah index
   void jumpToSurah(int surah) {
-    jumpToPage(quranCtrl.surahs[surah - 1].ayahs.first.page);
-    log('Jumped to Surah $surah at page ${quranCtrl.surahs[surah - 1].ayahs.first.page}');
+    final surahData = quranCtrl.surahs[surah - 1];
+    if (surahData.ayahs.isEmpty) return;
+    jumpToPage(surahData.ayahs.first.page);
+    log('Jumped to Surah $surah at page ${surahData.ayahs.first.page}');
   }
 
-  /// [allJoz] returns list of all Quran joz' names
+  /// [allJoz] returns list of available Quran joz' names based on loaded data
   static List<String> get allJoz {
     if (_cache.containsKey('allJoz')) {
       return _cache['allJoz'] as List<String>;
     }
-    final jozList = _QuranConstants.quranHizbs
-        .sublist(0, 30)
-        .map((jozz) => "الجزء $jozz")
-        .toList();
+    final ayahs = quranCtrl.state.allAyahs;
+    final juzNames = _QuranConstants.quranHizbs.sublist(0, 30);
+    List<String> jozList;
+    if (ayahs.isEmpty) {
+      jozList = juzNames.map((jozz) => "الجزء $jozz").toList();
+    } else {
+      final availableJuz = ayahs.map((a) => a.juz).toSet().toList()..sort();
+      jozList = availableJuz.map((j) => "الجزء ${juzNames[j - 1]}").toList();
+    }
     _cache['allJoz'] = jozList;
     return jozList;
   }
 
-  /// [allHizb] يعيد قائمة بأسماء جميع أجزاء القرآن.
-  ///
-  /// [allHizb] returns list of all Quran hizbs' names
+  /// [allHizb] returns list of all Quran hizbs' names (full 60-item lookup table)
   static List<String> get allHizb {
     if (_cache.containsKey('allHizb')) {
       return _cache['allHizb'] as List<String>;

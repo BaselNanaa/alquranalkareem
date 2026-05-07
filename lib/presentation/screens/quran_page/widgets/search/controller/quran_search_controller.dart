@@ -68,7 +68,8 @@ class QuranSearchController extends GetxController {
             uniqueSurahs[aya.surahNumber] = aya;
           }
         }
-        state.surahList.assignAll(uniqueSurahs.values);
+        state.surahList.assignAll(
+            uniqueSurahs.values.where((s) => s.ayahs.isNotEmpty));
         _setLoading(false);
       } else {
         state.errorMessage.value = "No results found for $text";

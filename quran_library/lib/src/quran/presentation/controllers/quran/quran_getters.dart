@@ -19,7 +19,7 @@ extension QuranGetters on QuranCtrl {
     // لا تتحقق من hasClients هنا لأن ذلك يسبب إعادة إنشاء الـ controller
     // قبل أن يتم ربطه بالـ PageView
     QuranCtrl.instance._pageController ??= PreloadPageController(
-      initialPage: (_quranRepository.getLastPage() ?? 1) - 1,
+      initialPage: (_quranRepository.getLastPage() ?? 582) - 1,
       keepPage: true,
       viewportFraction: 1.0,
     );
@@ -225,10 +225,14 @@ extension QuranGetters on QuranCtrl {
   /// Returns:
   ///   `SurahModel`: The SurahModel representing the Surah of the first Ayah on the specified page.
   SurahModel getCurrentSurahByPageNumber(int pageNumber) {
-    final firstAyah = getPageAyahsByIndex(pageNumber - 1).first;
+    final pageAyahs = getPageAyahsByIndex(pageNumber - 1);
+    final firstSurahWithAyahs =
+        surahs.firstWhere((s) => s.ayahs.isNotEmpty, orElse: () => surahs.first);
+    if (pageAyahs.isEmpty) return firstSurahWithAyahs;
+    final firstAyah = pageAyahs.first;
     return surahs.firstWhere(
       (s) => s.ayahs.any((a) => a.ayahUQNumber == firstAyah.ayahUQNumber),
-      orElse: () => surahs.first,
+      orElse: () => firstSurahWithAyahs,
     );
   }
 
@@ -244,7 +248,8 @@ extension QuranGetters on QuranCtrl {
   ///   `SurahModel`: The SurahModel representing the Surah of the given Ayah.
   SurahModel getSurahDataByAyah(AyahModel ayah) => surahs.firstWhere(
         (s) => s.ayahs.any((a) => a.ayahUQNumber == ayah.ayahUQNumber),
-        orElse: () => surahs.first,
+        orElse: () =>
+            surahs.firstWhere((s) => s.ayahs.isNotEmpty, orElse: () => surahs.first),
       );
 
   /// Retrieves the Surah data for a given unique Ayah number.

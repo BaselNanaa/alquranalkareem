@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(mkdir -p \"d:\\\\rikaz\\\\alquranal_kareem\\\\.claude\")",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import sys; print\\(sys.version\\)\")",
+      "Bash(dart --version)",
+      "Bash(node -e ' *)",
+      "Bash(dart pub *)",
+      "Bash(flutter analyze *)",
+      "Bash(where flutter *)",
+      "Bash(flutter --version)",
+      "Bash(fvm list *)",
+      "Bash(fvm use *)",
+      "Bash(fvm flutter *)"
+    ],
+    "additionalDirectories": [
+      "d:\\rikaz\\alquranal_kareem\\.claude"
+    ]
+  }
+}

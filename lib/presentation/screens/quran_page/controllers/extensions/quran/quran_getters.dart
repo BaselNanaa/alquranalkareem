@@ -45,16 +45,6 @@ extension QuranGetters on QuranController {
       ? true.obs
       : false.obs;
 
-  // PageController get pageController {
-  //   return state.quranPageController = PageController(
-  //     viewportFraction:
-  //         (Responsive.isDesktop(Get.context!) && Get.context!.isLandscape)
-  //         ? 1 / 2
-  //         : 1,
-  //     initialPage: state.box.read(MSTART_PAGE) ?? 0,
-  //     keepPage: true,
-  //   );
-  // }
 
   /// فهرس السورة الحالية (0-based) بناءً على الصفحة المعروضة
   int get currentSurahIndex {

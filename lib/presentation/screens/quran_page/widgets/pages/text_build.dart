@@ -36,6 +36,11 @@ class TextBuild extends StatelessWidget {
           bookmarkList: bookmarkTextList,
           backgroundColor: Colors.transparent,
           appLanguageCode: Get.locale!.languageCode,
+          onPageChanged: (pageIndex) {
+            final page = pageIndex + 1;
+            QuranController.instance.state.box.write(MSTART_PAGE, page);
+            QuranController.instance.state.currentPage.value = page;
+          },
           onPagePress: () => quranCtrl.clearSelection(),
           textColor: Get.theme.colorScheme.inversePrimary,
           ayahIconColor: Get.theme.colorScheme.inverseSurface,

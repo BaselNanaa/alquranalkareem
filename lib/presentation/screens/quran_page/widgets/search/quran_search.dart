@@ -32,19 +32,24 @@ class QuranSearch extends StatelessWidget {
           searchCtrl.state.searchTextEditing.text.isEmpty) {
         return LastSearchWidget();
       } else if (searchCtrl.state.surahList.isNotEmpty) {
+        final availableSurahs = searchCtrl.state.surahList
+            .where((s) => s.ayahs.isNotEmpty)
+            .toList();
+        if (availableSurahs.isEmpty) return const SizedBox.shrink();
         return SizedBox(
           height: 50.h,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: ListView.builder(
-              itemCount: searchCtrl.state.surahList.length,
+              itemCount: availableSurahs.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                SurahModel search = searchCtrl.state.surahList[index];
+                SurahModel search = availableSurahs[index];
                 return Directionality(
                   textDirection: TextDirection.rtl,
                   child: GestureDetector(
                     onTap: () {
+                      if (search.ayahs.isEmpty) return;
                       quranCtrl.changeSurahListOnTap(search.ayahs.first.page);
                       quranCtrl.state.tabBarController.close();
                     },

@@ -25,6 +25,9 @@ Future<void> main() async {
   Map<String, Map<String, String>> languages = await dep.init();
   await initializeApp();
   driftRuntimeOptions.dontWarnAboutMultipleDatabases = true;
+      FlutterError.onError = (e) {
+     print(e);
+    };
   runApp(
     AppInfo(
       data: await AppInfoData.get(),

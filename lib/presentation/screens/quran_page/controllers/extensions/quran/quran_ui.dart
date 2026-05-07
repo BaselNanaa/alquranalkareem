@@ -5,7 +5,8 @@ extension QuranUi on QuranController {
 
   void changeSurahListOnTap(int page) {
     state._quranRepository.saveLastPage(page);
-    // QuranController.instance.state.box.write(MSTART_PAGE, page);
+    state.box.write(MSTART_PAGE, page);
+    state.currentPage.value = page;
     QuranCtrl.instance.state.currentPageNumber.value = page;
     QuranLibrary.quranCtrl.quranPagesController.jumpToPage(page - 1);
     if (state.navBarController.isOpen) {
@@ -71,7 +72,7 @@ extension QuranUi on QuranController {
       state.lastReadSurahNumber.value = getSurahNumberFromPage(index + 1);
       state._quranRepository.saveLastPage(index);
       state.box
-        // ..write(MSTART_PAGE, index)
+        ..write(MSTART_PAGE, index + 1)
         ..write(MLAST_URAH, state.lastReadSurahNumber.value);
     }, Priority.idle);
   }
