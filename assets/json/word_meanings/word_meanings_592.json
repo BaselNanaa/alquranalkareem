@@ -1,0 +1,262 @@
+{
+  "version": "1.0",
+  "source": "تفسير الميسر",
+  "word_meanings": [
+    {
+      "surah": 87,
+      "ayah": 16,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "تُفَضِّلون",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 87,
+      "ayah": 18,
+      "start_word": 2,
+      "end_word": 5,
+      "text": "قبل القرآن",
+      "color": "#CC0000"
+    },
+    {
+      "surah": 87,
+      "ayah": 18,
+      "start_word": 2,
+      "end_word": 5,
+      "text": "الفَلاح والدَّعوة لاختيار الآخِرة",
+      "color": "#CC0000"
+    },
+    {
+      "surah": 88,
+      "ayah": 1,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "أيُّها النَّبي",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 1,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "القِيامة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 2,
+      "start_word": 3,
+      "end_word": 3,
+      "text": "ذَليلة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 3,
+      "start_word": 1,
+      "end_word": 1,
+      "text": "دابَّة العَمل",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 3,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "مُجهَدة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 4,
+      "start_word": 1,
+      "end_word": 1,
+      "text": "تَدخُل وتُقاسي",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 4,
+      "start_word": 3,
+      "end_word": 3,
+      "text": "شَديدة الحَرارة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 6,
+      "start_word": 6,
+      "end_word": 6,
+      "text": "شَوك مُرّ",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 8,
+      "start_word": 3,
+      "end_word": 3,
+      "text": "مُتنَعِّمة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 9,
+      "start_word": 1,
+      "end_word": 1,
+      "text": "لعَملها الصالح",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 10,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "الجَنَّة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 11,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "باطِلاً وما لا فائِدة منه",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 12,
+      "start_word": 3,
+      "end_word": 3,
+      "text": "مُتدَفِّقة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 13,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "أقداح",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 14,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "بين أيديهم",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 15,
+      "start_word": 1,
+      "end_word": 1,
+      "text": "وسائِد",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 15,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "فُرُش",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 15,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "مُفرَّقة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 15,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "بجانب بعضها",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 16,
+      "start_word": 1,
+      "end_word": 2,
+      "text": "نَظرة تَأمُّل",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 18,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "بِلا عَمَد",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 19,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "أُعليَت قائِمة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 20,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "بُسِطَت",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 21,
+      "start_word": 1,
+      "end_word": 1,
+      "text": "أيُّها النَّبي",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 22,
+      "start_word": 3,
+      "end_word": 3,
+      "text": "مُسَلَّط لإكراهِهم",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 23,
+      "start_word": 3,
+      "end_word": 3,
+      "text": "أدبَر عن القرآن",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 23,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "به",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 25,
+      "start_word": 3,
+      "end_word": 3,
+      "text": "رُجوعهم",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 88,
+      "ayah": 26,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "على أعمالِهم",
+      "color": "#2E7D32"
+    }
+  ]
+}

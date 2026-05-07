@@ -173,6 +173,7 @@ class _QpcV4FlowingTextState extends State<QpcV4FlowingText> {
         context: context,
         pageIndex: widget.pageIndex,
         isSelected: isSelectedCombined,
+        wordNumber: seg.wordNumber,
         showAyahBookmarkedIcon: widget.showAyahBookmarkedIcon,
         fontSize: fs,
         ayahUQNum: uq,

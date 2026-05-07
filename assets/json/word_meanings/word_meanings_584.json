@@ -1,0 +1,230 @@
+{
+  "version": "1.0",
+  "source": "تفسير الميسر",
+  "word_meanings": [
+    {
+      "surah": 79,
+      "ayah": 16,
+      "start_word": 6,
+      "end_word": 6,
+      "text": "المُطَهَّر المُبارَك",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 17,
+      "start_word": 3,
+      "end_word": 5,
+      "text": "تَجاوَز الحَدَّ في كُفره وظُلمِه",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 18,
+      "start_word": 6,
+      "end_word": 6,
+      "text": "بِرِفق - تَتطَهَّر مِن الشِّرك",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 19,
+      "start_word": 1,
+      "end_word": 1,
+      "text": "أُرشِدَك - مَعرِفة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 19,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "عَقابَه",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 20,
+      "start_word": 2,
+      "end_word": 3,
+      "text": "المُعجِزة - وهي اليَد والعَصا - جَمع",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 21,
+      "start_word": 1,
+      "end_word": 2,
+      "text": "فِرعَون - مُبتَعِداً عَن الإيمان - رَبَّه",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 23,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "قُوَّتَه",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 24,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "فَقال أنا رَبُّكُم الأعلى",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 25,
+      "start_word": 3,
+      "end_word": 5,
+      "text": "بالإحراق بالإغراق",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 26,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "مَوعِظة - عَقاب الله",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 27,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "أنتُم - أم السَّماء",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 28,
+      "start_word": 1,
+      "end_word": 3,
+      "text": "جَعَلَها مُرتَفِعة - مُستَوية",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 29,
+      "start_word": 1,
+      "end_word": 4,
+      "text": "أظلَم - أظهَر - نَهارَها",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 30,
+      "start_word": 1,
+      "end_word": 4,
+      "text": "خَلَق السَّماء دَحرَجَها",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 31,
+      "start_word": 3,
+      "end_word": 4,
+      "text": "ما يَقتات به النَّاس والدَّواب",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 32,
+      "start_word": 1,
+      "end_word": 2,
+      "text": "أنبَتَها",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 33,
+      "start_word": 1,
+      "end_word": 3,
+      "text": "دَوابِّكم - كُلَّ ذَلِك - الشِّدَّة العُظمى",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 34,
+      "start_word": 3,
+      "end_word": 4,
+      "text": "القِيامة - أظهَرَت",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 36,
+      "start_word": 3,
+      "end_word": 4,
+      "text": "كَفَر",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 39,
+      "start_word": 3,
+      "end_word": 4,
+      "text": "المَرجِع",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 40,
+      "start_word": 4,
+      "end_word": 5,
+      "text": "عَظَمة الله",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 40,
+      "start_word": 7,
+      "end_word": 9,
+      "text": "المَحارِم",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 42,
+      "start_word": 1,
+      "end_word": 5,
+      "text": "المُكَذِّبون بالبَعث - مَتى - وُقوعَها",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 43,
+      "start_word": 1,
+      "end_word": 4,
+      "text": "في أيِّ شَيء",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 44,
+      "start_word": 1,
+      "end_word": 3,
+      "text": "تَذكِر وَقتِها - عِلمَها",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 45,
+      "start_word": 4,
+      "end_word": 5,
+      "text": "السَّاعة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 79,
+      "ayah": 46,
+      "start_word": 1,
+      "end_word": 9,
+      "text": "يَقيموا في قُبورِهم",
+      "color": "#2E7D32"
+    }
+  ]
+}

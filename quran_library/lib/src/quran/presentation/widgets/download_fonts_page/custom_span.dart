@@ -8,6 +8,7 @@ TextSpan _qpcV4SpanSegment({
   required double fontSize,
   required int ayahUQNum,
   required int ayahNumber,
+  required int wordNumber,
   required WordRef wordRef,
   required bool isWordKhilaf,
   required String glyphs,
@@ -36,9 +37,8 @@ TextSpan _qpcV4SpanSegment({
   final withTajweed = QuranCtrl.instance.state.isTajweedEnabled.value;
   final isTenRecitations = WordInfoCtrl.instance.isTenRecitations;
   final bool forceRed = isWordKhilaf && !withTajweed && isTenRecitations;
-
-  // اختيار الخط: كلمات الخلاف تستخدم خط CPAL أحمر بدلاً من foreground Paint
   final String fontFamily;
+
   if (fontFamilyOverride != null) {
     fontFamily = fontFamilyOverride;
   } else if (isFontsLocal) {
@@ -141,6 +141,7 @@ TextSpan _qpcV4SpanSegment({
         style: baseTextStyle,
         recognizer: recognizer,
       ),
+ /*      TextSpan(text: '$wordNumber', style: const TextStyle(color: Colors.red)), */
       if (tail != null) tail,
     ],
   );

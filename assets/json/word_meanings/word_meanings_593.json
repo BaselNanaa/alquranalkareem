@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "source": "تجريبي - معاني كلمات سورة الغاشية",
+  "word_meanings": [
+    {
+      "surah": 88,
+      "ayah": 23,
+      "start_word": 2,
+      "end_word": 3,
+      "text": "أدبر عن القرأن",
+      "color": "#CC0000"
+    },
+    {
+      "surah": 88,
+      "ayah": 23,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "به",
+      "color": "#CC0000"
+    },
+    {
+      "surah": 88,
+      "ayah": 25,
+      "start_word": 3,
+      "end_word": 3,
+      "text": "رجوعهم",
+      "color": "#CC0000"
+    },
+    {
+      "surah": 88,
+      "ayah": 26,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "على أعمالهم",
+      "color": "#CC0000"
+    }
+  ]
+}

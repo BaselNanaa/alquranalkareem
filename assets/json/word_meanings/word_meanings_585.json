@@ -1,0 +1,366 @@
+{
+  "version": "1.0",
+  "source": "تفسير الميسر",
+  "word_meanings": [
+    {
+      "surah": 80,
+      "ayah": 1,
+      "start_word": 1,
+      "end_word": 1,
+      "text": "تَغيَّر وجهُه",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 1,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "أدارَ ظَهرَه",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 2,
+      "start_word": 1,
+      "end_word": 3,
+      "text": "عبد الله بنُ أم مكتوم مسترشداً",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 3,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "يَتطهَّر من الذنوب",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 4,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "يتذكَّر",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 5,
+      "start_word": 3,
+      "end_word": 3,
+      "text": "المَوعِظة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 6,
+      "start_word": 3,
+      "end_word": 3,
+      "text": "تَقبَّل عليه",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 7,
+      "start_word": 1,
+      "end_word": 2,
+      "text": "لا حَرَج",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 7,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "يَتطهَّر من كفره",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 8,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "يسرع في طلب الخير",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 9,
+      "start_word": 1,
+      "end_word": 2,
+      "text": "يخاف الله تعالى",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 10,
+      "start_word": 1,
+      "end_word": 3,
+      "text": "تَتشاغل",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 11,
+      "start_word": 1,
+      "end_word": 1,
+      "text": "لا تَفعَل مِثلَ ذلك",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 12,
+      "start_word": 3,
+      "end_word": 3,
+      "text": "اتَّعَظ بالقرآن",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 13,
+      "start_word": 1,
+      "end_word": 3,
+      "text": "هذه الصُّحف",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 14,
+      "start_word": 1,
+      "end_word": 2,
+      "text": "رَفيعة القَدر",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 15,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "الملائكة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 16,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "مطيعين",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 17,
+      "start_word": 1,
+      "end_word": 2,
+      "text": "لُعِن",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 17,
+      "start_word": 3,
+      "end_word": 4,
+      "text": "أشَدَّ كُفرَه",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 17,
+      "start_word": 3,
+      "end_word": 4,
+      "text": "حتى يَتكبَّر",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 18,
+      "start_word": 1,
+      "end_word": 4,
+      "text": "طَوراً بعد طَور بعد ولادَته",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 18,
+      "start_word": 1,
+      "end_word": 1,
+      "text": "تَكريماً له",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 20,
+      "start_word": 2,
+      "end_word": 3,
+      "text": "ليَختار طريق الخير أو الشر",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 21,
+      "start_word": 3,
+      "end_word": 3,
+      "text": "بَعثَه للحساب",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 22,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "كيف أوجَده",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 23,
+      "start_word": 1,
+      "end_word": 1,
+      "text": "لَم يُؤَدِّ",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 23,
+      "start_word": 2,
+      "end_word": 5,
+      "text": "إنزالاً كثيراً",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 24,
+      "start_word": 1,
+      "end_word": 4,
+      "text": "الله",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 25,
+      "start_word": 1,
+      "end_word": 4,
+      "text": "فَتَقنا",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 26,
+      "start_word": 1,
+      "end_word": 4,
+      "text": "بالنبات",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 27,
+      "start_word": 1,
+      "end_word": 3,
+      "text": "كالحِنطة والشَّعير",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 29,
+      "start_word": 1,
+      "end_word": 2,
+      "text": "كثيرة الأشجار",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 30,
+      "start_word": 1,
+      "end_word": 2,
+      "text": "ما تَرعاه البهائم",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 31,
+      "start_word": 1,
+      "end_word": 2,
+      "text": "مَنفَعة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 33,
+      "start_word": 3,
+      "end_word": 3,
+      "text": "تَصُخُّ الآذانَ كادت تُصِمُّها",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 34,
+      "start_word": 1,
+      "end_word": 5,
+      "text": "أمر عَظيم",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 36,
+      "start_word": 1,
+      "end_word": 1,
+      "text": "زَوجِه",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 37,
+      "start_word": 6,
+      "end_word": 6,
+      "text": "بِشَغلِه عن الآخِرة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 37,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "المُؤمِنون",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 39,
+      "start_word": 1,
+      "end_word": 1,
+      "text": "مَضيئة",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 39,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "فَرحة بما تَراه من نَعيم",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 40,
+      "start_word": 1,
+      "end_word": 1,
+      "text": "الكافِرين",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 40,
+      "start_word": 4,
+      "end_word": 4,
+      "text": "غُبار",
+      "color": "#2E7D32"
+    },
+    {
+      "surah": 80,
+      "ayah": 41,
+      "start_word": 2,
+      "end_word": 2,
+      "text": "تُغَطِّيها ظَلَمة",
+      "color": "#2E7D32"
+    }
+  ]
+}

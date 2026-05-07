@@ -92,6 +92,7 @@ part 'src/quran/data/qpc_v4/qpc_hafs_word_by_word_assets_loader.dart';
 part 'src/quran/data/qpc_v4/qpc_v4_assets_loader.dart';
 part 'src/quran/data/qpc_v4/qpc_v4_models.dart';
 part 'src/quran/data/qpc_v4/qpc_v4_page_renderer.dart';
+part 'src/quran/data/word_meanings_loader.dart';
 part 'src/quran/data/repositories/quran_repository.dart';
 part 'src/quran/data/repositories/word_info_repository.dart';
 part 'src/quran/presentation/controllers/auto_scroll/auto_scroll_ctrl.dart';

@@ -232,6 +232,7 @@ class GetSingleAyah extends StatelessWidget {
 
           return _qpcV4SpanSegment(
             context: context,
+            wordNumber: seg.wordNumber,
             pageIndex: pageNumber - 1,
             isSelected: isSelectedCombined,
             showAyahBookmarkedIcon: showAyahBookmarkedIcon,

@@ -64,6 +64,9 @@ class _QpcV4RichTextLineState extends State<QpcV4RichTextLine> {
   /// بصمة البيانات المؤثرة على البناء — عند تغيّرها يُبطل الكاش
   int _lastFingerprint = 0;
 
+  /// صفحة المعاني المحملة لهذا السطر
+  WordMeaningsPage? _meaningsPage;
+
   /// حساب بصمة سريعة للبيانات التي تؤثر فعلياً على شكل الويدجت
   int _computeFingerprint() {
     final quranCtrl = widget.quranCtrl;
@@ -94,6 +97,11 @@ class _QpcV4RichTextLineState extends State<QpcV4RichTextLine> {
     // تغيّر بيانات القراءات (عند اكتمال prewarm)
     final recitationsRevisionHash =
         WordInfoCtrl.instance.recitationsDataRevision.hashCode;
+    // معاني الكلمات
+    final meaningsHash = Object.hash(
+      _meaningsPage?.pageNumber,
+      _meaningsPage?.meanings.length,
+    );
 
     return Object.hash(
         selHash,
@@ -105,7 +113,8 @@ class _QpcV4RichTextLineState extends State<QpcV4RichTextLine> {
         wordSelectedHash,
         tenRecHash,
         recitationsRevisionHash,
-        overrideHash);
+        overrideHash,
+        meaningsHash);
   }
 
   @override
@@ -113,55 +122,69 @@ class _QpcV4RichTextLineState extends State<QpcV4RichTextLine> {
     final wordInfoCtrl = WordInfoCtrl.instance;
     final isLandscape =
         MediaQuery.of(context).orientation == Orientation.landscape;
+    final int pageNumber = widget.pageIndex + 1;
 
-    // GetBuilder بمعرّف خاص بالصفحة — لا يُعاد بناؤه من update() بدون id
-    return GetBuilder<QuranCtrl>(
-      id: 'selection_page_${widget.pageIndex}',
-      builder: (_) => GetBuilder<WordInfoCtrl>(
-        id: 'word_info_data',
-        builder: (_) {
-          // قراءة القيم داخل الـ builder حتى تعكس آخر حالة عند كل rebuild
-          final withTajweed = QuranCtrl.instance.state.isTajweedEnabled.value;
-          final isTenRecitations = wordInfoCtrl.isTenRecitations;
+    return FutureBuilder<WordMeaningsPage?>(
+      future: WordMeaningsLoader.load(pageNumber),
+      builder: (context, snapshot) {
+        // تحديث الكاش عند وصول المعاني
+        if (snapshot.data != _meaningsPage) {
+          _meaningsPage = snapshot.data;
+          _cachedWidget = null; // إبطال الكاش لإعادة بناء السطر مع المعاني
+        }
 
-          // prewarm القراءات في خلفية
-          if (isTenRecitations &&
-              !withTajweed &&
-              wordInfoCtrl.isKindAvailable(WordInfoKind.recitations)) {
-            final surahs = widget.segments.map((s) => s.surahNumber).toSet();
-            WidgetsBinding.instance.addPostFrameCallback((_) {
-              wordInfoCtrl.prewarmRecitationsSurahs(surahs);
-            });
-          }
+        // GetBuilder بمعرّف خاص بالصفحة — لا يُعاد بناؤه من update() بدون id
+        return GetBuilder<QuranCtrl>(
+          id: 'selection_page_${widget.pageIndex}',
+          builder: (_) => GetBuilder<WordInfoCtrl>(
+            id: 'word_info_data',
+            builder: (_) {
+              // قراءة القيم داخل الـ builder حتى تعكس آخر حالة عند كل rebuild
+              final withTajweed = QuranCtrl.instance.state.isTajweedEnabled.value;
+              final isTenRecitations = wordInfoCtrl.isTenRecitations;
 
-          // فحص البصمة: إذا لم تتغيّر البيانات الفعلية → أعد الكاش
-          final fp = _computeFingerprint();
-          if (_cachedWidget != null && fp == _lastFingerprint) {
-            return _cachedWidget!;
-          }
-          _lastFingerprint = fp;
+              // prewarm القراءات في خلفية
+              if (isTenRecitations &&
+                  !withTajweed &&
+                  wordInfoCtrl.isKindAvailable(WordInfoKind.recitations)) {
+                final surahs = widget.segments.map((s) => s.surahNumber).toSet();
+                WidgetsBinding.instance.addPostFrameCallback((_) {
+                  wordInfoCtrl.prewarmRecitationsSurahs(surahs);
+                });
+              }
 
-          _cachedWidget = LayoutBuilder(
-            builder: (ctx, constraints) {
-              final fs = isLandscape
-                  ? 100.0
-                  : PageFontSizeHelper.getFontSize(
-                      widget.pageIndex,
-                      ctx,
-                    ).h;
+              // فحص البصمة: إذا لم تتغيّر البيانات الفعلية → أعد الكاش
+              final fp = _computeFingerprint();
+              if (_cachedWidget != null && fp == _lastFingerprint) {
+                return _cachedWidget!;
+              }
+              _lastFingerprint = fp;
 
-              return _buildRichText(
-                wordInfoCtrl,
-                context,
-                fs,
-                withTajweed: withTajweed,
-                isTenRecitations: isTenRecitations,
+              _cachedWidget = LayoutBuilder(
+                builder: (ctx, constraints) {
+                  final fs = isLandscape
+                      ? 100.0
+                      : PageFontSizeHelper.getFontSize(
+                          widget.pageIndex,
+                          ctx,
+                        ).h;
+
+                  return _buildRichText(
+                    wordInfoCtrl,
+                    context,
+                    fs,
+                    withTajweed: withTajweed,
+                    isTenRecitations: isTenRecitations,
+                    meaningsPage: _meaningsPage,
+                    maxWidth: constraints.maxWidth,
+                  );
+                },
               );
+              return _cachedWidget!;
             },
-          );
-          return _cachedWidget!;
-        },
-      ),
+          ),
+        );
+      },
     );
   }
 
@@ -171,6 +194,8 @@ class _QpcV4RichTextLineState extends State<QpcV4RichTextLine> {
     double fs, {
     required bool withTajweed,
     required bool isTenRecitations,
+    required WordMeaningsPage? meaningsPage,
+    double? maxWidth,
   }) {
     final bookmarksSet = widget.bookmarksAyahs.toSet();
     final ayahCharRanges = <int, TextSelection>{};
@@ -203,6 +228,7 @@ class _QpcV4RichTextLineState extends State<QpcV4RichTextLine> {
       final span = _qpcV4SpanSegment(
         context: context,
         pageIndex: widget.pageIndex,
+        wordNumber: seg.wordNumber,
         isSelected: isSelectedCombined,
         showAyahBookmarkedIcon: widget.showAyahBookmarkedIcon,
         fontSize: fs,
@@ -353,22 +379,188 @@ class _QpcV4RichTextLineState extends State<QpcV4RichTextLine> {
       text: TextSpan(children: spans),
     );
 
-    final hasSelection = ayahCharRanges.isNotEmpty;
-    final hasBookmarks = bookmarkCharRanges.isNotEmpty;
-    final hasWordSelection = wordSelectionRange != null;
+    final meaningsLine = _buildMeaningsLine(fs, meaningsPage);
 
-    if (!hasSelection && !hasBookmarks && !hasWordSelection) {
-      return richText;
+    final quranLine = () {
+      final hasSelection = ayahCharRanges.isNotEmpty;
+      final hasBookmarks = bookmarkCharRanges.isNotEmpty;
+      final hasWordSelection = wordSelectionRange != null;
+
+      if (!hasSelection && !hasBookmarks && !hasWordSelection) {
+        return richText;
+      }
+
+      return _AyahSelectionWidget(
+        selectedRanges: ayahCharRanges.values.toList(),
+        selectionColor: widget.ayahSelectedBackgroundColor ??
+            const Color(0xffCDAD80).withValues(alpha: 0.25),
+        bookmarkRanges: bookmarkCharRanges.values.toList(),
+        wordSelectionRange: wordSelectionRange,
+        child: richText,
+      );
+    }();
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      textDirection: TextDirection.rtl,
+      children: [
+        meaningsLine,
+        quranLine,
+      ],
+    );
+  }
+
+  Widget _buildMeaningsLine(double fs, WordMeaningsPage? meaningsPage) {
+    if (meaningsPage == null || meaningsPage.meanings.isEmpty) {
+      return const SizedBox.shrink();
     }
 
-    return _AyahSelectionWidget(
-      selectedRanges: ayahCharRanges.values.toList(),
-      selectionColor: widget.ayahSelectedBackgroundColor ??
-          const Color(0xffCDAD80).withValues(alpha: 0.25),
-      bookmarkRanges: bookmarkCharRanges.values.toList(),
-      wordSelectionRange: wordSelectionRange,
-      child: richText,
+    final quranCtrl = widget.quranCtrl;
+    final fontFamily = widget.fontFamilyOverride ??
+        (widget.isFontsLocal
+            ? widget.fontsName
+            : quranCtrl.getFontPath(widget.pageIndex, isDark: widget.isDark));
+    final baseTextStyle = TextStyle(
+      fontFamily: fontFamily,
+      package: widget.fontPackageOverride,
+      fontSize: fs,
+      height: 2,
     );
+
+    // نحسب عرض كل كلمة قرآنية مسبقاً
+    final wordWidths = <double>[];
+    for (final seg in widget.segments) {
+      final tp = TextPainter(
+        text: TextSpan(text: seg.glyphs, style: baseTextStyle),
+        textDirection: TextDirection.rtl,
+      );
+      tp.layout();
+      var width = tp.width;
+
+      if (seg.isAyahEnd) {
+        final tailTp = TextPainter(
+          text: TextSpan(
+            text:
+                '\u202F${seg.ayahNumber.toString().convertEnglishNumbersToArabic(seg.ayahNumber.toString())}\u202F',
+            style: TextStyle(
+              fontFamily: 'ayahNumber',
+              fontSize: fs + 5,
+              package: 'quran_library',
+            ),
+          ),
+          textDirection: TextDirection.rtl,
+        );
+        tailTp.layout();
+        width += tailTp.width;
+      }
+      wordWidths.add(width);
+    }
+
+    final children = <Widget>[];
+    var skipUntilIndex = -1; // نتخطى الكلمات المشمولة بنطاق معنى معروض
+
+    for (var i = 0; i < widget.segments.length; i++) {
+      if (i <= skipUntilIndex) continue;
+
+      final seg = widget.segments[i];
+
+      final meaning = meaningsPage.findMeaning(seg.surahNumber, seg.ayahNumber, seg.wordNumber);
+
+      if (meaning != null && seg.wordNumber == meaning.startWord) {
+        // بداية نطاق معنى: نجمع عروض الكلمات من startWord إلى endWord
+        var rangeWidth = 0.0;
+        var endIndex = i;
+        for (var j = i; j < widget.segments.length; j++) {
+          final s = widget.segments[j];
+          if (s.ayahNumber == seg.ayahNumber &&
+              s.wordNumber >= meaning.startWord &&
+              s.wordNumber <= meaning.endWord) {
+            rangeWidth += wordWidths[j];
+            endIndex = j;
+          } else {
+            break;
+          }
+        }
+        skipUntilIndex = endIndex;
+
+        children.add(
+          SizedBox(
+            width: rangeWidth,
+            child: Transform.scale(
+              scale: 5 / 3,
+              alignment: Alignment.topCenter,
+              child: Text(
+                meaning.text,
+                textAlign: TextAlign.center,
+                softWrap: false,
+                overflow: TextOverflow.visible,
+                maxLines: 1,
+                style: TextStyle(
+                  fontSize: fs * 0.25,
+                  color: _parseMeaningColor(meaning.color),
+                  height: 1.1,
+                ),
+              ),
+            ),
+          ),
+        );
+      } else {
+        // كلمة منفردة: إذا كانت ضمن نطاق معنى لكنها ليست البداية، ما نعرض شي
+        final isInsideRange = meaning != null &&
+            seg.wordNumber != meaning.startWord;
+        final displayText = isInsideRange ? '' : (meaning?.text ?? '');
+        final displayColor = displayText.isNotEmpty && meaning != null
+            ? _parseMeaningColor(meaning.color)
+            : Colors.transparent;
+
+        children.add(
+          SizedBox(
+            width: wordWidths[i],
+            child: Transform.scale(
+              scale: 5 / 3,
+              alignment: Alignment.topCenter,
+              child: Text(
+                displayText,
+                textAlign: TextAlign.center,
+                softWrap: false,
+                overflow: TextOverflow.visible,
+                maxLines: 1,
+                style: TextStyle(
+                  fontSize: fs * 0.25,
+                  color: displayColor,
+                  height: 1.1,
+                ),
+              ),
+            ),
+          ),
+        );
+      }
+    }
+
+    final row = Row(
+      textDirection: TextDirection.rtl,
+      mainAxisSize: MainAxisSize.min,
+      children: children,
+    );
+
+    return Container(
+      color: widget.isDark
+          ? const Color(0xFF3A352E)
+          : const Color.fromARGB(255, 234, 231, 225),
+      padding: const EdgeInsets.symmetric(vertical: 2),
+      child: row,
+    );
+  }
+}
+
+Color _parseMeaningColor(String hex) {
+  try {
+    if (hex.startsWith('#')) {
+      return Color(int.parse('FF${hex.substring(1)}', radix: 16));
+    }
+    return Color(int.parse(hex, radix: 16));
+  } catch (_) {
+    return Colors.black;
   }
 }
 

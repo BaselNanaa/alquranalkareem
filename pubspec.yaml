@@ -175,6 +175,7 @@ flutter:
     - assets/lottie/
     - assets/locales/
     - assets/json/azkar.json
+    - assets/json/word_meanings/
     - assets/quran_logo.png
     - assets/quran_logo_mac.png
     - assets/quran_logo512.png
